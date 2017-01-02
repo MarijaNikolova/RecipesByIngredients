@@ -1,5 +1,8 @@
 package serviceImpl.MoiRecepti;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import model.Constants;
@@ -35,13 +38,13 @@ public class MoiReceptiRecipeDataScroller {
 
     public void scrollDocument(Recipe recipe, Document document) throws IOException {
 
-        getCreationDate(recipe, document);
-        getTitle(recipe, document);
-        getPreparationInfo(recipe, document);
+       // getCreationDate(recipe, document);
+       // getTitle(recipe, document);
+      //  getPreparationInfo(recipe, document);
         Set<Ingredient> ingredients = getIngredients(document);
         recipe.setIngredientList(ingredients);
         addRecipesToInvertedIndex(recipe.getId(), ingredients);
-        System.out.println(this.ingredientsContainedInRecipes.toString());
+       // System.out.println(this.ingredientsContainedInRecipes.toString());
     }
 
 
@@ -53,15 +56,17 @@ public class MoiReceptiRecipeDataScroller {
         try {
             while ((line = bufferedReader.readLine()) != null) {
 
-                if (counter > 500) {
+               /* if (counter > 500) {
                     break;
-                }
+                } */
                 String recipeUrl = line;
-                Document document = Jsoup.connect(recipeUrl).get();
+                Document document = Jsoup.connect(recipeUrl).timeout(10*1000).get();
+
                 Recipe recipe = new Recipe();
                 recipe.setUrl(recipeUrl);
                 recipe.setId(counter);
                 scrollDocument(recipe, document);
+                System.out.println(counter);
                 ++counter;
             }
 
@@ -82,8 +87,10 @@ public class MoiReceptiRecipeDataScroller {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(datePattern);
 
         try {
-            Date creationDate = simpleDateFormat.parse(creationDateString);
-            recipe.setCreationDate(creationDate);
+            if (!Strings.isNullOrEmpty(creationDateString)) {
+                Date creationDate = simpleDateFormat.parse(creationDateString);
+                recipe.setCreationDate(creationDate);
+            }
 
         } catch (ParseException e) {
             e.printStackTrace();
@@ -136,7 +143,7 @@ public class MoiReceptiRecipeDataScroller {
             TreeSet<String> mappedStrings = mapIngredientToCleanedIngredients(ingredientText);
             ingredients.addAll(getIngredientsList(mappedStrings));
         }
-        System.out.println(ingredients.size() + " " + ingredients.toString());
+        //System.out.println(ingredients.size() + " " + ingredients.toString());
         return ingredients;
 
     }
@@ -225,5 +232,28 @@ public class MoiReceptiRecipeDataScroller {
         }
 
     }
+
+    public TreeMap<String, Set<Long>> getIngredientsContainedInRecipes() {
+        return ingredientsContainedInRecipes;
+    }
+
+    public void setIngredientsContainedInRecipes(TreeMap<String, Set<Long>> ingredientsContainedInRecipes) {
+        this.ingredientsContainedInRecipes = ingredientsContainedInRecipes;
+    }
+
+    public void writeIngredientsInvertedIndexToFile(PrintWriter invertedIndexIngredientsWriter)
+            throws JsonProcessingException {
+
+        Iterator<Map.Entry<String, Set<Long>>> iterator = this.ingredientsContainedInRecipes.entrySet().iterator();
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        while (iterator.hasNext()) {
+            Map.Entry<String, Set<Long>> entry = iterator.next();
+            String entryValueAsJsonString = objectMapper.writeValueAsString(entry);
+            invertedIndexIngredientsWriter.println(entryValueAsJsonString);
+        }
+
+    }
+
 
 }

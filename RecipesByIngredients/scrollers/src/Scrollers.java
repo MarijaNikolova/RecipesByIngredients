@@ -1,4 +1,5 @@
 import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
+import jdk.nashorn.internal.objects.NativeRegExp;
 import model.Constants;
 import serviceImpl.MoiRecepti.MoiReceptiAllIngredientsScroller;
 import serviceImpl.MoiRecepti.MoiReceptiAllRecipesScroller;
@@ -63,6 +64,18 @@ public class Scrollers {
                         ingredients);
 
         scroller.scrollDocumentAndWriteToFile();
+
+        String ingredientsWithInvertedIndex = "./resources/moirecepti/moirecepti-invertedindex.txt";
+        FileWriter fileWriterIngredientsWithInvertedIndex = new FileWriter(ingredientsWithInvertedIndex, true);
+        BufferedWriter bufferedWriterIngredientsWithInvertedIndex  =
+                new BufferedWriter(fileWriterIngredientsWithInvertedIndex);
+        PrintWriter printWriterIngredientsWithInvertedIndex =
+                new PrintWriter(bufferedWriterIngredientsWithInvertedIndex);
+
+        scroller.writeIngredientsInvertedIndexToFile(printWriterIngredientsWithInvertedIndex);
+        printWriterIngredientsWithInvertedIndex.close();
+
+        System.out.println(scroller.getIngredientsContainedInRecipes());
 
         printWriterForIngredients.close();
         printWriterForRecipesAndIngredients.close();

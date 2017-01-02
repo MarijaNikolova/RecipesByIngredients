@@ -10,5 +10,6 @@
     <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.0.0" level="project" />
     <orderEntry type="library" name="org.jsoup:jsoup:1.8.3" level="project" />
     <orderEntry type="library" name="com.google.guava:guava:10.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.3" level="project" />
   </component>
 </module>
