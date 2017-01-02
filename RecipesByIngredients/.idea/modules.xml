@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RecipesByIngredients.iml" filepath="$PROJECT_DIR$/RecipesByIngredients.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scrollers/scrollers.iml" filepath="$PROJECT_DIR$/scrollers/scrollers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webapp/webapp/webapp.iml" filepath="$PROJECT_DIR$/webapp/webapp/webapp.iml" />
+    </modules>
+  </component>
+</project>
