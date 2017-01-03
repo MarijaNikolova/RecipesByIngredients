@@ -1,0 +1,24 @@
+create table ingredient (
+	id int not null auto_increment,
+    name varchar(255),
+    description varchar(255),
+    constraint pk_ingredient primary key (id)
+);
+
+create table recipe (
+	id int not null,
+    title varchar(255) not null unique,
+    url varchar(255) not null unique,
+    category varchar(255),
+    timeOfCooking varchar(255),
+    recipeYield varchar(255),
+    stepsForCooking text,
+    creationDate date,
+    constraint pk_recipe primary key(id)
+);
+
+create table ingredientInvertedIndex (
+	id int not null,
+    id_ingredient int,
+    id_recipe int
+);
