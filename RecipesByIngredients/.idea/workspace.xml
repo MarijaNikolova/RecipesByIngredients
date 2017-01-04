@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13748170-8249-42bc-a2e3-4d70e851fcaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-invertedindex.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../sqlscript" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_40.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scrollers/src/service/RecipesDatabaseWriter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipesDatabaseWriter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/Scrollers.class" afterPath="$PROJECT_DIR$/out/production/scrollers/Scrollers.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/model/Constants.class" afterPath="$PROJECT_DIR$/out/production/scrollers/model/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/model/Ingredient.class" afterPath="$PROJECT_DIR$/out/production/scrollers/model/Ingredient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/model/Recipe.class" afterPath="$PROJECT_DIR$/out/production/scrollers/model/Recipe.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.class" afterPath="$PROJECT_DIR$/out/production/scrollers/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/resources/moirecepti/cleanedIngredients.txt" afterPath="$PROJECT_DIR$/out/production/scrollers/resources/moirecepti/cleanedIngredients.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/resources/moirecepti/moirecepti-recipesinfo.txt" afterPath="$PROJECT_DIR$/out/production/scrollers/resources/moirecepti/moirecepti-recipesinfo.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/scrollers.iml" afterPath="$PROJECT_DIR$/scrollers/scrollers.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/src/Scrollers.java" afterPath="$PROJECT_DIR$/scrollers/src/Scrollers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/src/model/Constants.java" afterPath="$PROJECT_DIR$/scrollers/src/model/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/src/model/Ingredient.java" afterPath="$PROJECT_DIR$/scrollers/src/model/Ingredient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/src/model/Recipe.java" afterPath="$PROJECT_DIR$/scrollers/src/model/Recipe.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/src/resources/moirecepti/cleanedIngredients.txt" afterPath="$PROJECT_DIR$/scrollers/src/resources/moirecepti/cleanedIngredients.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-recipesinfo.txt" afterPath="$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-recipesinfo.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.java" afterPath="$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../diplomska.txt" afterPath="$PROJECT_DIR$/../diplomska.txt" />
     </list>
     <ignored path="RecipesByIngredients.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/scrollers/src/Scrollers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+              <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -49,8 +57,9 @@
         <entry file="file://$PROJECT_DIR$/scrollers/src/model/Ingredient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+              <caret line="57" column="71" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="71" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="e#332#333#0" expanded="false" />
                 <element signature="e#364#365#0" expanded="false" />
                 <element signature="e#403#404#0" expanded="false" />
@@ -78,57 +87,59 @@
         <entry file="file://$PROJECT_DIR$/scrollers/src/model/Recipe.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+              <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="e#791#792#0" expanded="false" />
-                <element signature="e#819#820#0" expanded="false" />
-                <element signature="e#861#862#0" expanded="false" />
-                <element signature="e#895#896#0" expanded="false" />
-                <element signature="e#925#926#0" expanded="false" />
-                <element signature="e#951#952#0" expanded="false" />
-                <element signature="e#989#990#0" expanded="false" />
-                <element signature="e#1019#1020#0" expanded="false" />
-                <element signature="e#1054#1055#0" expanded="false" />
+                <element signature="e#822#823#0" expanded="false" />
+                <element signature="e#850#851#0" expanded="false" />
+                <element signature="e#892#893#0" expanded="false" />
+                <element signature="e#926#927#0" expanded="false" />
+                <element signature="e#956#957#0" expanded="false" />
+                <element signature="e#982#983#0" expanded="false" />
+                <element signature="e#1020#1021#0" expanded="false" />
+                <element signature="e#1050#1051#0" expanded="false" />
                 <element signature="e#1085#1086#0" expanded="false" />
-                <element signature="e#1133#1134#0" expanded="false" />
-                <element signature="e#1173#1174#0" expanded="false" />
-                <element signature="e#1223#1224#0" expanded="false" />
-                <element signature="e#1260#1261#0" expanded="false" />
-                <element signature="e#1421#1422#0" expanded="false" />
-                <element signature="e#1457#1458#0" expanded="false" />
-                <element signature="e#1515#1516#0" expanded="false" />
-                <element signature="e#1565#1566#0" expanded="false" />
-                <element signature="e#1607#1608#0" expanded="false" />
-                <element signature="e#1645#1646#0" expanded="false" />
-                <element signature="e#1707#1708#0" expanded="false" />
-                <element signature="e#1761#1762#0" expanded="false" />
-                <element signature="e#1798#1799#0" expanded="false" />
-                <element signature="e#1833#1834#0" expanded="false" />
-                <element signature="e#1887#1888#0" expanded="false" />
-                <element signature="e#1935#1936#0" expanded="false" />
-                <element signature="e#1973#1974#0" expanded="false" />
-                <element signature="e#2007#2008#0" expanded="false" />
-                <element signature="e#2061#2062#0" expanded="false" />
-                <element signature="e#2107#2108#0" expanded="false" />
-                <element signature="e#2134#2135#0" expanded="false" />
-                <element signature="e#2159#2160#0" expanded="false" />
-                <element signature="e#2193#2194#0" expanded="false" />
-                <element signature="e#2221#2222#0" expanded="false" />
+                <element signature="e#1116#1117#0" expanded="false" />
+                <element signature="e#1164#1165#0" expanded="false" />
+                <element signature="e#1204#1205#0" expanded="false" />
+                <element signature="e#1254#1255#0" expanded="false" />
+                <element signature="e#1291#1292#0" expanded="false" />
+                <element signature="e#1360#1361#0" expanded="false" />
+                <element signature="e#1412#1413#0" expanded="false" />
+                <element signature="e#1452#1453#0" expanded="false" />
+                <element signature="e#1488#1489#0" expanded="false" />
+                <element signature="e#1546#1547#0" expanded="false" />
+                <element signature="e#1596#1597#0" expanded="false" />
+                <element signature="e#1638#1639#0" expanded="false" />
+                <element signature="e#1676#1677#0" expanded="false" />
+                <element signature="e#1738#1739#0" expanded="false" />
+                <element signature="e#1792#1793#0" expanded="false" />
+                <element signature="e#1829#1830#0" expanded="false" />
+                <element signature="e#1864#1865#0" expanded="false" />
+                <element signature="e#1918#1919#0" expanded="false" />
+                <element signature="e#1966#1967#0" expanded="false" />
+                <element signature="e#2004#2005#0" expanded="false" />
+                <element signature="e#2038#2039#0" expanded="false" />
+                <element signature="e#2092#2093#0" expanded="false" />
+                <element signature="e#2138#2139#0" expanded="false" />
+                <element signature="e#2165#2166#0" expanded="false" />
+                <element signature="e#2190#2191#0" expanded="false" />
+                <element signature="e#2224#2225#0" expanded="false" />
+                <element signature="e#2252#2253#0" expanded="false" />
+                <element signature="e#2374#2375#0" expanded="false" />
+                <element signature="e#2418#2419#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoiReceptiRecipeDataScroller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.java">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrollers/src/model/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="257" column="0" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="e#8458#8459#0" expanded="false" />
-                <element signature="e#8510#8511#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -138,14 +149,39 @@
         <entry file="file://$PROJECT_DIR$/scrollers/scrollers.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moirecepti-allingredients.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-allingredients.txt">
+      <file leaf-file-name="MoiReceptiRecipeDataScroller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="9.103448">
+              <caret line="263" column="17" selection-start-line="263" selection-start-column="17" selection-end-line="263" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoiReceptiRecipesDatabaseWriter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipesDatabaseWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.3859649">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="81" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#980#1003#0" expanded="true" />
+                <marker date="1483565713967" expanded="true" signature="2187:2259" placeholder="insert into ingredient... " />
+                <marker date="1483565713967" expanded="true" signature="2292:2393" placeholder="insert into inredientinvertedindex... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moirecepti-ingredientsdescription.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrollers/src/moirecepti-ingredientsdescription.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -154,32 +190,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cleanedIngredients.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/cleanedIngredients.txt">
+      <file leaf-file-name="MoiReceptiAllRecipesScroller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllRecipesScroller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
-              <folding />
+              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moirecepti-invertedindex.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-invertedindex.txt">
+      <file leaf-file-name="MoiReceptiAllIngredientsScroller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllIngredientsScroller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecipesByIngredients.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RecipesByIngredients.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <caret line="98" column="50" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#722#723#0" expanded="false" />
+                <element signature="e#768#769#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -233,14 +265,15 @@
         <option value="$PROJECT_DIR$/scrollers/src/service/AllIngredientsScroller.java" />
         <option value="$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllRecipesScroller.java" />
         <option value="$PROJECT_DIR$/scrollers/src/service/RecipeDataScroller.java" />
-        <option value="$PROJECT_DIR$/scrollers/src/model/Constants.java" />
-        <option value="$PROJECT_DIR$/scrollers/src/model/Recipe.java" />
-        <option value="$PROJECT_DIR$/scrollers/src/model/Ingredient.java" />
         <option value="$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllIngredientsScroller.java" />
-        <option value="$PROJECT_DIR$/scrollers/src/Scrollers.java" />
-        <option value="$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.java" />
         <option value="$PROJECT_DIR$/scrollers/scrollers.iml" />
         <option value="$PROJECT_DIR$/scrollers/src/resources/moirecepti/cleanedIngredients.txt" />
+        <option value="$PROJECT_DIR$/scrollers/src/model/Constants.java" />
+        <option value="$PROJECT_DIR$/scrollers/src/model/Ingredient.java" />
+        <option value="$PROJECT_DIR$/scrollers/src/model/Recipe.java" />
+        <option value="$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipesDatabaseWriter.java" />
+        <option value="$PROJECT_DIR$/scrollers/src/Scrollers.java" />
+        <option value="$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.java" />
       </list>
     </option>
   </component>
@@ -287,9 +320,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -340,8 +372,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipesByIngredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipesByIngredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scrollers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serviceImpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipesByIngredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipesByIngredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scrollers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serviceImpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MoiRecepti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipesByIngredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipesByIngredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scrollers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moirecepti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -834,7 +937,9 @@
       <workItem from="1482068143520" duration="24356000" />
       <workItem from="1482780700262" duration="6742000" />
       <workItem from="1483385374518" duration="9489000" />
-      <workItem from="1483440572158" duration="936000" />
+      <workItem from="1483440572158" duration="11982000" />
+      <workItem from="1483539206587" duration="1817000" />
+      <workItem from="1483559717597" duration="4361000" />
     </task>
     <task id="LOCAL-00001" summary="/feature/ Added writing to file for the inverted index ingredients.">
       <created>1483394160762</created>
@@ -842,11 +947,17 @@
       <option name="project" value="LOCAL" />
       <updated>1483394160762</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="/feature/ The ingredients with inverted index are storaged in a file.">
+      <created>1483451092365</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1483451092365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102880000" />
+    <option name="totallyTimeSpent" value="120104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -856,20 +967,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49411765" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.02047244" sideWeight="0.2485294" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43300653" sideWeight="0.2485294" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.60787404" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.015748031" sideWeight="0.75147057" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.71732026" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16176471" sideWeight="0.75147057" order="3" side_tool="false" content_ui="tabs" x="-25" y="-12" width="1354" height="386" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33235294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20288754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5685039" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43464053" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -890,20 +1001,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="/feature/ Added writing to file for the inverted index ingredients." />
-    <option name="LAST_COMMIT_MESSAGE" value="/feature/ Added writing to file for the inverted index ingredients." />
+    <MESSAGE value="/feature/ The ingredients with inverted index are storaged in a file." />
+    <MESSAGE value="/feature/ Writing the ingredients and inverted indexes in database" />
+    <option name="LAST_COMMIT_MESSAGE" value="/feature/ Writing the ingredients and inverted indexes in database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.java</url>
-          <line>68</line>
+          <line>73</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipesDatabaseWriter.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -912,25 +1033,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllIngredientsScroller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/Scrollers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/model/Scroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="98" column="50" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#722#723#0" expanded="false" />
+            <element signature="e#768#769#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -945,11 +1056,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8458#8459#0" expanded="false" />
-            <element signature="e#8510#8511#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -971,6 +1078,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,6 +1138,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,38 +1256,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/model/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="117" selection-start-line="28" selection-start-column="117" selection-end-line="28" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-allrecipes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-recipesinfo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/moirecepti-ingredientsdescription.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllIngredientsScroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6409336">
-          <caret line="98" column="50" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1185,24 +1270,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllRecipesScroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06030151">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrollers/src/service/RecipeDataScroller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40201005">
           <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/service/AllIngredientsScroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65829146">
-          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -1213,11 +1284,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RecipesByIngredients.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-allingredients.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/cleanedIngredients.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/RecipesByIngredients/Main.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-invertedindex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/service/AllIngredientsScroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/service/RecipesDatabaseWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllRecipesScroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllIngredientsScroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="50" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#722#723#0" expanded="false" />
+            <element signature="e#768#769#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/moirecepti-ingredientsdescription.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scrollers/src/model/Ingredient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+          <caret line="57" column="71" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="71" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#332#333#0" expanded="false" />
             <element signature="e#364#365#0" expanded="false" />
             <element signature="e#403#404#0" expanded="false" />
@@ -1243,43 +1394,78 @@
     <entry file="file://$PROJECT_DIR$/scrollers/src/model/Recipe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#791#792#0" expanded="false" />
-            <element signature="e#819#820#0" expanded="false" />
-            <element signature="e#861#862#0" expanded="false" />
-            <element signature="e#895#896#0" expanded="false" />
-            <element signature="e#925#926#0" expanded="false" />
-            <element signature="e#951#952#0" expanded="false" />
-            <element signature="e#989#990#0" expanded="false" />
-            <element signature="e#1019#1020#0" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#850#851#0" expanded="false" />
+            <element signature="e#892#893#0" expanded="false" />
+            <element signature="e#926#927#0" expanded="false" />
+            <element signature="e#956#957#0" expanded="false" />
+            <element signature="e#982#983#0" expanded="false" />
+            <element signature="e#1020#1021#0" expanded="false" />
+            <element signature="e#1050#1051#0" expanded="false" />
             <element signature="e#1085#1086#0" expanded="false" />
-            <element signature="e#1133#1134#0" expanded="false" />
-            <element signature="e#1173#1174#0" expanded="false" />
-            <element signature="e#1223#1224#0" expanded="false" />
-            <element signature="e#1260#1261#0" expanded="false" />
-            <element signature="e#1421#1422#0" expanded="false" />
-            <element signature="e#1457#1458#0" expanded="false" />
-            <element signature="e#1515#1516#0" expanded="false" />
-            <element signature="e#1565#1566#0" expanded="false" />
-            <element signature="e#1607#1608#0" expanded="false" />
-            <element signature="e#1645#1646#0" expanded="false" />
-            <element signature="e#1707#1708#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1798#1799#0" expanded="false" />
-            <element signature="e#1833#1834#0" expanded="false" />
-            <element signature="e#1887#1888#0" expanded="false" />
-            <element signature="e#1935#1936#0" expanded="false" />
-            <element signature="e#1973#1974#0" expanded="false" />
-            <element signature="e#2007#2008#0" expanded="false" />
-            <element signature="e#2061#2062#0" expanded="false" />
-            <element signature="e#2107#2108#0" expanded="false" />
-            <element signature="e#2134#2135#0" expanded="false" />
-            <element signature="e#2159#2160#0" expanded="false" />
-            <element signature="e#2193#2194#0" expanded="false" />
-            <element signature="e#2221#2222#0" expanded="false" />
+            <element signature="e#1116#1117#0" expanded="false" />
+            <element signature="e#1164#1165#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1254#1255#0" expanded="false" />
+            <element signature="e#1291#1292#0" expanded="false" />
+            <element signature="e#1360#1361#0" expanded="false" />
+            <element signature="e#1412#1413#0" expanded="false" />
+            <element signature="e#1452#1453#0" expanded="false" />
+            <element signature="e#1488#1489#0" expanded="false" />
+            <element signature="e#1546#1547#0" expanded="false" />
+            <element signature="e#1596#1597#0" expanded="false" />
+            <element signature="e#1638#1639#0" expanded="false" />
+            <element signature="e#1676#1677#0" expanded="false" />
+            <element signature="e#1738#1739#0" expanded="false" />
+            <element signature="e#1792#1793#0" expanded="false" />
+            <element signature="e#1829#1830#0" expanded="false" />
+            <element signature="e#1864#1865#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1966#1967#0" expanded="false" />
+            <element signature="e#2004#2005#0" expanded="false" />
+            <element signature="e#2038#2039#0" expanded="false" />
+            <element signature="e#2092#2093#0" expanded="false" />
+            <element signature="e#2138#2139#0" expanded="false" />
+            <element signature="e#2165#2166#0" expanded="false" />
+            <element signature="e#2190#2191#0" expanded="false" />
+            <element signature="e#2224#2225#0" expanded="false" />
+            <element signature="e#2252#2253#0" expanded="false" />
+            <element signature="e#2374#2375#0" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/model/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/scrollers.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipesDatabaseWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3859649">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="81" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#980#1003#0" expanded="true" />
+            <marker date="1483565713967" expanded="true" signature="2187:2259" placeholder="insert into ingredient... " />
+            <marker date="1483565713967" expanded="true" signature="2292:2393" placeholder="insert into inredientinvertedindex... " />
           </folding>
         </state>
       </provider>
@@ -1287,59 +1473,15 @@
     <entry file="file://$PROJECT_DIR$/scrollers/src/Scrollers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipeDataScroller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="257" column="0" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8458#8459#0" expanded="false" />
-            <element signature="e#8510#8511#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RecipesByIngredients.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/scrollers.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-allingredients.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/cleanedIngredients.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/resources/moirecepti/moirecepti-invertedindex.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="9.103448">
+          <caret line="263" column="17" selection-start-line="263" selection-start-column="17" selection-end-line="263" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1408,11 +1550,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited>mysql:mysql-connector-java:5.1.40</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.508046" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

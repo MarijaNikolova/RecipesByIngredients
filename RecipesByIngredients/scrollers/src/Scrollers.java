@@ -4,6 +4,7 @@ import model.Constants;
 import serviceImpl.MoiRecepti.MoiReceptiAllIngredientsScroller;
 import serviceImpl.MoiRecepti.MoiReceptiAllRecipesScroller;
 import serviceImpl.MoiRecepti.MoiReceptiRecipeDataScroller;
+import serviceImpl.MoiRecepti.MoiReceptiRecipesDatabaseWriter;
 
 import java.io.*;
 import java.util.List;
@@ -16,7 +17,8 @@ import java.util.TreeSet;
 public class Scrollers {
     public static void main(String[] args) throws IOException {
 
-        takeDataFromMoiRecepti();
+       // takeDataFromMoiRecepti();
+       saveDataFromMoiReceptiToDatabase();
     }
 
     public static void takeDataFromMoiRecepti() throws IOException {
@@ -48,12 +50,12 @@ public class Scrollers {
         TreeMap<String, List<String>> ingredients =  allIngredientsScroller.getCleanIngredientsSet();
         printWriterForAllIngredients.close();
 
-        String recipesAndIngredientsFileName = "./resources/moirecepti/moirecepti-recipesinfo.txt";
+        String recipesAndIngredientsFileName = Constants.MOI_RECEPTI_RECIPES_INFO_FILE_NAME;
         FileWriter fileWriterRecipesAndIngredients =  new FileWriter(recipesAndIngredientsFileName, true);
         BufferedWriter bufferedWriterRecipesAndIngredients =  new BufferedWriter(fileWriterRecipesAndIngredients);
         PrintWriter printWriterForRecipesAndIngredients = new PrintWriter(bufferedWriterRecipesAndIngredients);
 
-        String ingredientsFileName = "moirecepti-ingredientsdescription.txt";
+        String ingredientsFileName = Constants.MOI_RECEPTI_INGREDIENTS_DESCRIPTION_FILE_NAME;
         FileWriter fileWriterIngredients =  new FileWriter(ingredientsFileName, true);
         BufferedWriter bufferedWriterIngredients =  new BufferedWriter(fileWriterIngredients);
         PrintWriter printWriterForIngredients = new PrintWriter(bufferedWriterIngredients);
@@ -65,19 +67,25 @@ public class Scrollers {
 
         scroller.scrollDocumentAndWriteToFile();
 
-        String ingredientsWithInvertedIndex = "./resources/moirecepti/moirecepti-invertedindex.txt";
+        String ingredientsWithInvertedIndex = Constants.MOI_RECEPTI_INGREDIENTS_INVERTED_INDEX_FILE_NAME;
         FileWriter fileWriterIngredientsWithInvertedIndex = new FileWriter(ingredientsWithInvertedIndex, true);
         BufferedWriter bufferedWriterIngredientsWithInvertedIndex  =
                 new BufferedWriter(fileWriterIngredientsWithInvertedIndex);
         PrintWriter printWriterIngredientsWithInvertedIndex =
                 new PrintWriter(bufferedWriterIngredientsWithInvertedIndex);
 
-        scroller.writeIngredientsInvertedIndexToFile(printWriterIngredientsWithInvertedIndex);
+       // scroller.writeIngredientsInvertedIndexToFile(printWriterIngredientsWithInvertedIndex);
         printWriterIngredientsWithInvertedIndex.close();
 
-        System.out.println(scroller.getIngredientsContainedInRecipes());
+        //System.out.println(scroller.getIngredientsContainedInRecipes());
 
         printWriterForIngredients.close();
         printWriterForRecipesAndIngredients.close();
+    }
+
+    public static void saveDataFromMoiReceptiToDatabase() {
+        //FileReader
+        MoiReceptiRecipesDatabaseWriter moiReceptiRecipesDatabaseWriter = new MoiReceptiRecipesDatabaseWriter();
+        moiReceptiRecipesDatabaseWriter.readIngredientsWithInvertedIndexAndWriteToFile();
     }
 }

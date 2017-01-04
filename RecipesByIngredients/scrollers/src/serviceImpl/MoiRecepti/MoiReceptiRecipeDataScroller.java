@@ -1,6 +1,5 @@
 package serviceImpl.MoiRecepti;
 
-import com.fasterxml.jackson.annotation.JsonView;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Strings;
@@ -37,15 +36,25 @@ public class MoiReceptiRecipeDataScroller {
     }
 
 
-    public void scrollDocument(Recipe recipe, Document document) throws IOException {
+    public void scrollDocumentForIngredientsAndCreateInvertedIndexFile(Recipe recipe, Document document) throws IOException {
 
-       // getCreationDate(recipe, document);
-       // getTitle(recipe, document);
-      //  getPreparationInfo(recipe, document);
         Set<Ingredient> ingredients = getIngredients(document);
         recipe.setIngredientList(ingredients);
         addRecipesToInvertedIndex(recipe.getId(), ingredients);
        // System.out.println(this.ingredientsContainedInRecipes.toString());
+    }
+
+    public void scrollDocumentForRecipeInfo(Recipe recipe, Document document) throws IOException {
+
+        getCreationDate(recipe, document);
+        getTitle(recipe, document);
+        getPreparationInfo(recipe, document);
+        Set<Ingredient> ingredients = getIngredientsWithDescription(document);
+        recipe.setIngredientList(ingredients);
+        getImageUrl(recipe, document);
+        getPreparationSteps(recipe, document);
+
+
     }
 
 
@@ -57,16 +66,14 @@ public class MoiReceptiRecipeDataScroller {
         try {
             while ((line = bufferedReader.readLine()) != null) {
 
-               /* if (counter > 500) {
-                    break;
-                } */
                 String recipeUrl = line;
-                Document document = Jsoup.connect(recipeUrl).timeout(10*1000).get();
-
+                Document document = Jsoup.connect(recipeUrl).timeout(100*1000).get();
                 Recipe recipe = new Recipe();
                 recipe.setUrl(recipeUrl);
                 recipe.setId(counter);
-                scrollDocument(recipe, document);
+                //scrollDocumentForIngredientsAndCreateInvertedIndexFile(recipe, document);
+                scrollDocumentForRecipeInfo(recipe, document);
+                writeRecipeInfoToFile(recipe);
                 System.out.println(counter);
                 ++counter;
             }
@@ -109,6 +116,25 @@ public class MoiReceptiRecipeDataScroller {
 
     }
 
+    private void getImageUrl(Recipe recipe, Document document) {
+        Elements imageElement =
+                document.select(".column-left .post .post-image img");
+        String imageSource = imageElement.attr("src");
+        recipe.setPictureUrl(imageSource);
+    }
+
+    private void getPreparationSteps(Recipe recipe, Document document) {
+
+        Elements instructionsElement =
+                document.select(".column-left .post .post-content p");
+        String instructions = instructionsElement.text();
+       // System.out.println(instructions);
+        recipe.setStepsForCooking(instructions);
+
+    }
+
+
+
     private void getPreparationInfo(Recipe recipe, Document document) {
 
         Elements preparationInfoElements = document.select(".column-middle .recipe-meta .prep-info span");
@@ -149,7 +175,26 @@ public class MoiReceptiRecipeDataScroller {
 
     }
 
-    private TreeSet<String> mapIngredientToCleanedIngredients(String ingredientText) {
+    private Set<Ingredient> getIngredientsWithDescription(Document document) {
+
+        HashSet<Ingredient> ingredients = new HashSet<Ingredient>();
+
+        Elements ingredientsList =
+                document.select(".column-middle .recipe-meta .recipe-ingredients .panel-body ol li");
+
+        for (Element ingredientElement : ingredientsList) {
+
+            String ingredientText = ingredientElement.text();
+            Ingredient ingredient = new Ingredient();
+            ingredient.setDescription(ingredientText);
+            ingredients.add(ingredient);
+        }
+        //System.out.println(ingredients.size() + " " + ingredients.toString());
+        return ingredients;
+
+    }
+
+    private TreeSet<String>  mapIngredientToCleanedIngredients(String ingredientText) {
 
         TreeSet<String> ingredientsSet = new TreeSet<String>();
         Iterator<Map.Entry<String, List<String>>> iterator = allIngredients.entrySet().iterator();
@@ -256,5 +301,12 @@ public class MoiReceptiRecipeDataScroller {
 
     }
 
+    public void writeRecipeInfoToFile(Recipe recipe) throws JsonProcessingException {
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        String recipeAsString = objectMapper.writeValueAsString(recipe);
+        printWriterForRecipesData.println(recipeAsString);
+        System.out.println(recipeAsString);
+    }
 
 }

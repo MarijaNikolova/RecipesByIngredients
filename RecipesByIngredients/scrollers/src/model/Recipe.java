@@ -18,6 +18,7 @@ public class Recipe {
     private String recipeYield;
     private Date creationDate;
     private Set<Ingredient> ingredientList;
+    private String pictureUrl;
 
     public Recipe() {
 
@@ -101,5 +102,13 @@ public class Recipe {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getPictureUrl() {
+        return pictureUrl;
+    }
+
+    public void setPictureUrl(String pictureUrl) {
+        this.pictureUrl = pictureUrl;
     }
 }

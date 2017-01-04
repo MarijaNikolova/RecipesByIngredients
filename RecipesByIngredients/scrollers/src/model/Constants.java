@@ -27,6 +27,13 @@ public class Constants {
     public static final String MOI_RECEPTI_ALL_INGREDIENTS_FILE_NAME = "./resources/moirecepti/moirecepti-allingredients.txt";
     /** String that represents the name of the file in which all url for the recipes from MoiRecepti are written. **/
     public static final String MOI_RECEPTI_CLEANED_INGREDIENTS_FILE_NAME = "./resources/moirecepti/cleanedIngredients.txt";
+    /** String that represents the name of the file in which the info for all of the recipes is written. **/
+    public static final String MOI_RECEPTI_RECIPES_INFO_FILE_NAME = "./resources/moirecepti/moirecepti-recipesinfo.txt";
+    /** String that represents the name of the file in the inverted index of the recipes is written. **/
+    public static final String MOI_RECEPTI_INGREDIENTS_INVERTED_INDEX_FILE_NAME = "./resources/moirecepti/moirecepti-invertedindex.txt";
+    /** String that represents the name of the file where the description for the ingredients is written **/
+    public static final String MOI_RECEPTI_INGREDIENTS_DESCRIPTION_FILE_NAME = "moirecepti-ingredientsdescription.txt";
+
 
     //CSS Queries
     /** String that represents the css query that selects the recipes from one page from MoiRecepti. **/

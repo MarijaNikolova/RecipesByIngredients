@@ -52,6 +52,9 @@ public class Ingredient implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-        return ((Ingredient)o).name.compareTo(this.name);
+        if (this.name != null) {
+            return ((Ingredient)o).name.compareTo(this.name);
+        }
+        return ((Ingredient)o).description.compareTo(this.description);
     }
 }
