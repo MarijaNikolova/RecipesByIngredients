@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * Class that represents the recipes.
  */
-public class Recipe {
+public class Recipe implements Comparable {
 
     private long id;
     private String title;
@@ -110,5 +110,10 @@ public class Recipe {
 
     public void setPictureUrl(String pictureUrl) {
         this.pictureUrl = pictureUrl;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return Long.compare(((Recipe)o).getId(), this.id);
     }
 }

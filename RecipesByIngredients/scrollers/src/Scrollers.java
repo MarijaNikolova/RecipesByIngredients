@@ -1,15 +1,11 @@
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
-import jdk.nashorn.internal.objects.NativeRegExp;
 import model.Constants;
 import serviceImpl.MoiRecepti.MoiReceptiAllIngredientsScroller;
-import serviceImpl.MoiRecepti.MoiReceptiAllRecipesScroller;
 import serviceImpl.MoiRecepti.MoiReceptiRecipeDataScroller;
 import serviceImpl.MoiRecepti.MoiReceptiRecipesDatabaseWriter;
 
 import java.io.*;
 import java.util.List;
 import java.util.TreeMap;
-import java.util.TreeSet;
 
 /**
  * Here all of the scrollers will be called.
@@ -86,6 +82,7 @@ public class Scrollers {
     public static void saveDataFromMoiReceptiToDatabase() {
         //FileReader
         MoiReceptiRecipesDatabaseWriter moiReceptiRecipesDatabaseWriter = new MoiReceptiRecipesDatabaseWriter();
-        moiReceptiRecipesDatabaseWriter.readIngredientsWithInvertedIndexAndWriteToFile();
+       // moiReceptiRecipesDatabaseWriter.readIngredientsWithInvertedIndexAndWriteToDatabase();
+        moiReceptiRecipesDatabaseWriter.readRecipesAndWriteToDatabase();
     }
 }
