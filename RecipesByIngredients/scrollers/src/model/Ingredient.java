@@ -8,7 +8,7 @@ import org.jsoup.helper.StringUtil;
  */
 public class Ingredient implements Comparable{
 
-    private String name;
+     private String name;
     private String amount;
     private String measure;
     private String description;

@@ -14,7 +14,7 @@ public class Scrollers {
     public static void main(String[] args) throws IOException {
 
        // takeDataFromMoiRecepti();
-       saveDataFromMoiReceptiToDatabase();
+      // saveDataFromMoiReceptiToDatabase();
     }
 
     public static void takeDataFromMoiRecepti() throws IOException {
@@ -83,6 +83,6 @@ public class Scrollers {
         //FileReader
         MoiReceptiRecipesDatabaseWriter moiReceptiRecipesDatabaseWriter = new MoiReceptiRecipesDatabaseWriter();
        // moiReceptiRecipesDatabaseWriter.readIngredientsWithInvertedIndexAndWriteToDatabase();
-        moiReceptiRecipesDatabaseWriter.readRecipesAndWriteToDatabase();
+        //moiReceptiRecipesDatabaseWriter.readRecipesAndWriteToDatabase();
     }
 }
