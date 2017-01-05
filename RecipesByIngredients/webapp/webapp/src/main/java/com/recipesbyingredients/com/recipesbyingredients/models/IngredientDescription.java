@@ -1,7 +1,4 @@
-package com.recipesbyingredients.models;
-
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
+package com.recipesbyingredients.com.recipesbyingredients.models;
 
 import javax.persistence.*;
 

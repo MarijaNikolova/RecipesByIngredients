@@ -1,4 +1,4 @@
-package com.recipesbyingredients.models;
+package com.recipesbyingredients.com.recipesbyingredients.models;
 
 import org.hibernate.annotations.Type;
 

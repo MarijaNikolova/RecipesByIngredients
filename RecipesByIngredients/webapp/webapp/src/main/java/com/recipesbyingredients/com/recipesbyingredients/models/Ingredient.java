@@ -1,7 +1,6 @@
-package com.recipesbyingredients.models;
+package com.recipesbyingredients.com.recipesbyingredients.models;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
 
 /**

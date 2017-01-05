@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13748170-8249-42bc-a2e3-4d70e851fcaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Ingredient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/IngredientDescription.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Recipe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/Scrollers.class" afterPath="$PROJECT_DIR$/out/production/scrollers/Scrollers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/model/Recipe.class" afterPath="$PROJECT_DIR$/out/production/scrollers/model/Recipe.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_hibernate_hibernate_jpamodelgen_5_2_6_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/repository/IngredientRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/repository/RecipeRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/scrollers/resources/moirecepti/cleanedIngredients.txt" afterPath="$PROJECT_DIR$/out/production/scrollers/resources/moirecepti/cleanedIngredients.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/src/Scrollers.java" afterPath="$PROJECT_DIR$/scrollers/src/Scrollers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrollers/src/model/Ingredient.java" afterPath="$PROJECT_DIR$/scrollers/src/model/Ingredient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../diplomska.txt" afterPath="$PROJECT_DIR$/../diplomska.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp/pom.xml" afterPath="$PROJECT_DIR$/webapp/webapp/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Ingredient.java" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Ingredient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/IngredientDescription.java" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/IngredientDescription.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Recipe.java" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Recipe.java" />
     </list>
     <ignored path="RecipesByIngredients.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,134 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Ingredient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrollers/src/model/Ingredient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#333#334#0" expanded="false" />
-                <element signature="e#365#366#0" expanded="false" />
-                <element signature="e#404#405#0" expanded="false" />
-                <element signature="e#436#437#0" expanded="false" />
-                <element signature="e#469#470#0" expanded="false" />
-                <element signature="e#498#499#0" expanded="false" />
-                <element signature="e#542#543#0" expanded="false" />
-                <element signature="e#578#579#0" expanded="false" />
-                <element signature="e#612#613#0" expanded="false" />
-                <element signature="e#642#643#0" expanded="false" />
-                <element signature="e#688#689#0" expanded="false" />
-                <element signature="e#726#727#0" expanded="false" />
-                <element signature="e#764#765#0" expanded="false" />
-                <element signature="e#798#799#0" expanded="false" />
-                <element signature="e#852#853#0" expanded="false" />
-                <element signature="e#898#899#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Recipe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrollers/src/model/Recipe.java">
+        <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Recipe.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="0" selection-start-line="11" selection-start-column="3" selection-end-line="113" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#844#845#0" expanded="false" />
-                <element signature="e#872#873#0" expanded="false" />
-                <element signature="e#914#915#0" expanded="false" />
-                <element signature="e#948#949#0" expanded="false" />
-                <element signature="e#978#979#0" expanded="false" />
-                <element signature="e#1004#1005#0" expanded="false" />
-                <element signature="e#1042#1043#0" expanded="false" />
-                <element signature="e#1072#1073#0" expanded="false" />
-                <element signature="e#1107#1108#0" expanded="false" />
-                <element signature="e#1138#1139#0" expanded="false" />
-                <element signature="e#1186#1187#0" expanded="false" />
-                <element signature="e#1226#1227#0" expanded="false" />
-                <element signature="e#1276#1277#0" expanded="false" />
-                <element signature="e#1313#1314#0" expanded="false" />
-                <element signature="e#1382#1383#0" expanded="false" />
-                <element signature="e#1434#1435#0" expanded="false" />
-                <element signature="e#1474#1475#0" expanded="false" />
-                <element signature="e#1510#1511#0" expanded="false" />
-                <element signature="e#1568#1569#0" expanded="false" />
-                <element signature="e#1618#1619#0" expanded="false" />
-                <element signature="e#1660#1661#0" expanded="false" />
-                <element signature="e#1698#1699#0" expanded="false" />
-                <element signature="e#1760#1761#0" expanded="false" />
-                <element signature="e#1814#1815#0" expanded="false" />
-                <element signature="e#1851#1852#0" expanded="false" />
-                <element signature="e#1886#1887#0" expanded="false" />
-                <element signature="e#1940#1941#0" expanded="false" />
-                <element signature="e#1988#1989#0" expanded="false" />
-                <element signature="e#2026#2027#0" expanded="false" />
-                <element signature="e#2060#2061#0" expanded="false" />
-                <element signature="e#2114#2115#0" expanded="false" />
-                <element signature="e#2160#2161#0" expanded="false" />
-                <element signature="e#2187#2188#0" expanded="false" />
-                <element signature="e#2212#2213#0" expanded="false" />
-                <element signature="e#2246#2247#0" expanded="false" />
-                <element signature="e#2274#2275#0" expanded="false" />
-                <element signature="e#2311#2312#0" expanded="false" />
-                <element signature="e#2344#2345#0" expanded="false" />
-                <element signature="e#2396#2397#0" expanded="false" />
-                <element signature="e#2440#2441#0" expanded="false" />
-                <element signature="e#2492#2493#0" expanded="false" />
-                <element signature="e#2557#2558#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrollers/src/model/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="65" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoiReceptiRecipesDatabaseWriter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipesDatabaseWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1483571796610" expanded="true" signature="2364:2436" placeholder="insert into ingredient... " />
-                <marker date="1483571796610" expanded="true" signature="2469:2570" placeholder="insert into inredientinvertedindex... " />
-                <marker date="1483571796610" expanded="true" signature="4842:5016" placeholder="insert into ingredient... " />
-                <marker date="1483571796610" expanded="true" signature="5049:5152" placeholder="insert into ingredientinvertedindex... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloWorldController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/controllers/HelloWorldController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#337#338#0" expanded="false" />
-                <element signature="e#367#368#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recipe.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Recipe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25877193">
               <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,48 +45,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scrollers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrollers/src/Scrollers.java">
+      <file leaf-file-name="IngredientDescription_.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/webapp/target/generated-sources/annotations/com/recipesbyingredients/models/IngredientDescription_.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipeRepository.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/repository/RecipeRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6652174">
+              <caret line="9" column="99" selection-start-line="9" selection-start-column="99" selection-end-line="9" selection-end-column="99" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IngredientRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/repository/IngredientRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IngredientDescription.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/IngredientDescription.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1002#1003#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ingredient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Ingredient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -222,8 +84,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -244,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webapp/webapp/pom.xml" />
         <option value="$PROJECT_DIR$/webapp/webapp/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/controllers/HelloWorldController.java" />
         <option value="$PROJECT_DIR$/scrollers/src/model/ScrollerImplementation.java" />
@@ -279,6 +140,11 @@
         <option value="$PROJECT_DIR$/scrollers/src/model/Ingredient.java" />
         <option value="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Ingredient.java" />
         <option value="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Recipe.java" />
+        <option value="$PROJECT_DIR$/webapp/webapp/pom.xml" />
+        <option value="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/repository/IngredientRepository.java" />
+        <option value="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/repository/RecipeRepository.java" />
+        <option value="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/database/repository/RecipeRepository.java" />
+        <option value="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/repository/RecipeRepository.java" />
       </list>
     </option>
   </component>
@@ -478,7 +344,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="recipesbyingredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipesByIngredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipesByIngredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipesbyingredients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipesbyingredients" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,6 +409,11 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.recipesbyingredients.database.repository" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WebappApplication">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -982,7 +895,7 @@
       <workItem from="1483539206587" duration="1817000" />
       <workItem from="1483559717597" duration="11704000" />
       <workItem from="1483613515621" duration="6668000" />
-      <workItem from="1483625899843" duration="157000" />
+      <workItem from="1483625899843" duration="2504000" />
     </task>
     <task id="LOCAL-00001" summary="/feature/ Added writing to file for the inverted index ingredients.">
       <created>1483394160762</created>
@@ -1008,11 +921,17 @@
       <option name="project" value="LOCAL" />
       <updated>1483572451537</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="/feature/ Mapped objects from database to webapp with jpa and hibernate annotations">
+      <created>1483626170695</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1483626170696</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134272000" />
+    <option name="totallyTimeSpent" value="136619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -1020,28 +939,28 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49411765" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43300653" sideWeight="0.2485294" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57843137" sideWeight="0.50303954" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5816994" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57843137" sideWeight="0.4969605" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5245098" sideWeight="0.74696046" order="3" side_tool="false" content_ui="tabs" x="-25" y="-12" width="1354" height="386" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27659574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38449848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.4970588" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.4970588" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480392" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49411765" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5245098" sideWeight="0.75147057" order="3" side_tool="false" content_ui="tabs" x="-25" y="-12" width="1354" height="386" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480392" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1062,7 +981,8 @@
     <MESSAGE value="/feature/ The ingredients with inverted index are storaged in a file." />
     <MESSAGE value="/feature/ Writing the ingredients and inverted indexes in database" />
     <MESSAGE value="/feature/ Writing the recipes  in database" />
-    <option name="LAST_COMMIT_MESSAGE" value="/feature/ Writing the recipes  in database" />
+    <MESSAGE value="/feature/ Mapped objects from database to webapp with jpa and hibernate annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="/feature/ Mapped objects from database to webapp with jpa and hibernate annotations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1089,51 +1009,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Ingredient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/Food2ForkScrollerAll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiAllRecipesScroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/scrollers.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/controllers/HelloWorldController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrollers/src/Scrollers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1209,13 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/webapp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.730769">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1356,6 +1224,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="50" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#722#723#0" expanded="false" />
+            <element signature="e#768#769#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1463,28 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipesDatabaseWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1483571796610" expanded="true" signature="2364:2436" placeholder="insert into ingredient... " />
-            <marker date="1483571796610" expanded="true" signature="2469:2570" placeholder="insert into inredientinvertedindex... " />
-            <marker date="1483571796610" expanded="true" signature="4842:5016" placeholder="insert into ingredient... " />
-            <marker date="1483571796610" expanded="true" signature="5049:5152" placeholder="insert into ingredientinvertedindex... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollers/src/Scrollers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrollers/src/model/Ingredient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1511,9 +1362,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Ingredient.java">
+    <entry file="file://$PROJECT_DIR$/webapp/webapp/.mvn/wrapper/maven-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/webapp/target/classes/com/recipesbyingredients/models/Ingredient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/org_hibernate_hibernate_jpamodelgen_5_2_6_Final.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/serviceImpl/MoiRecepti/MoiReceptiRecipesDatabaseWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031894933">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding>
+            <marker date="1483571796610" expanded="true" signature="2364:2436" placeholder="insert into ingredient... " />
+            <marker date="1483571796610" expanded="true" signature="2469:2570" placeholder="insert into inredientinvertedindex... " />
+            <marker date="1483571796610" expanded="true" signature="4842:5016" placeholder="insert into ingredient... " />
+            <marker date="1483571796610" expanded="true" signature="5049:5152" placeholder="insert into ingredientinvertedindex... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrollers/src/Scrollers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7129456">
+          <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/IngredientDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33020636">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Ingredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031894933">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1521,32 +1427,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/IngredientDescription.java">
+    <entry file="file://$PROJECT_DIR$/webapp/webapp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7365592">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/webapp/target/generated-sources/annotations/com/recipesbyingredients/models/IngredientDescription_.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/models/Recipe.java">
+    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/repository/IngredientRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25877193">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/repository/RecipeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6652174">
+          <caret line="9" column="99" selection-start-line="9" selection-start-column="99" selection-end-line="9" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1617,7 +1537,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mysql:mysql-connector-java:5.1.40</last-edited>
+          <last-edited>org.hibernate:hibernate-jpamodelgen:5.2.6.Final</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
