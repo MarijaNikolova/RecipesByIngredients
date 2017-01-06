@@ -3,15 +3,18 @@ package com.recipesbyingredients.com.recipesbyingredients.models;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import javax.sql.rowset.serial.SerialArray;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Class that represents the Recipe view model.
  */
 @Entity
 @Table(name = "recipe")
-public class Recipe {
+public class Recipe implements Serializable {
 
     @Id
     @Column(name = "id", nullable = false, unique = true)
@@ -22,19 +25,24 @@ public class Recipe {
     private String url;
     @Column(name = "category", nullable = true, unique = false)
     private String category;
-    @Column(name = "timeOfCooking", nullable = true, unique = false)
+    @Column(name = "time_of_cooking", nullable = true, unique = false)
     private String timeOfCooking;
-    @Column(name = "stepsForCooking", nullable = true, unique = false, columnDefinition = "TEXT")
+    @Column(name = "steps_for_cooking", nullable = true, unique = false, columnDefinition = "TEXT")
     private String stepsForCooking;
-    @Column(name = "recipeYield", nullable = true, unique = false)
+    @Column(name = "recipe_yield", nullable = true, unique = false)
     private String recipeYield;
-    @Column(name = "creationDate", nullable = true, unique = false)
-    @Type(type = "date")
+    @Column(name = "creation_date", nullable = true, unique = false)
     private Date creationDate;
-    @Column(name = "imageUrl", nullable = true, unique = false)
+    @Column(name = "image_url")
     private String imageUrl;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe",fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe",fetch = FetchType.LAZY)
     private List<IngredientDescription> ingredientList;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "ingredient_inverted_index", joinColumns = {
+            @JoinColumn(name = "id_recipe", nullable = true, updatable = false)},
+            inverseJoinColumns = {
+                    @JoinColumn(name = "id_ingredient", nullable = true, updatable = false)})
+    private Set<Ingredient> ingredients;
 
     public Recipe() {
 
@@ -126,5 +134,10 @@ public class Recipe {
 
     public void setIngredientList(List<IngredientDescription> ingredientList) {
         this.ingredientList = ingredientList;
+    }
+
+    @Override
+    public String toString() {
+        return this.title + "\n";
     }
 }

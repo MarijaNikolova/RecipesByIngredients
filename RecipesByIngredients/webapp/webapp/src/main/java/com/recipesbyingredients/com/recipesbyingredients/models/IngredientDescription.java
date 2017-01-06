@@ -1,17 +1,18 @@
 package com.recipesbyingredients.com.recipesbyingredients.models;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Class that represents the model for the ingredients description in the database.
  */
 @Entity
-@Table(name = "recipeingredient")
-public class IngredientDescription {
+@Table(name = "recipe_ingredient")
+public class IngredientDescription implements Serializable {
     @Id
     @Column(name = "id", nullable = false, unique = true)
     private int id;
-    @Column(name = "description", nullable = true, unique = false)
+    @Column(name = "ingredient_description", nullable = true, unique = false)
     private String description;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_recipe")

@@ -1,6 +1,7 @@
 package com.recipesbyingredients.com.recipesbyingredients.models;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 
 /**
@@ -8,7 +9,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "ingredient")
-public class Ingredient {
+public class Ingredient implements Serializable {
 
     @Id
     @Column(name = "id", nullable = false, unique = true)
@@ -19,7 +20,7 @@ public class Ingredient {
     private String description;
 
     @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "ingredientinvertedindex", joinColumns = {
+    @JoinTable(name = "ingredient_inverted_index", joinColumns = {
             @JoinColumn(name = "id_ingredient", nullable = true, updatable = false)},
     inverseJoinColumns = {
             @JoinColumn(name = "id_recipe", nullable = true, updatable = false)})

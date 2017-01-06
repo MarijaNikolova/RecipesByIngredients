@@ -47,6 +47,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-jpamodelgen</artifactId>
+			<version>4.3.8.Final</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -73,13 +79,6 @@
 						</configuration>
 					</execution>
 				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>org.hibernate</groupId>
-						<artifactId>hibernate-jpamodelgen</artifactId>
-						<version>4.3.8.Final</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
