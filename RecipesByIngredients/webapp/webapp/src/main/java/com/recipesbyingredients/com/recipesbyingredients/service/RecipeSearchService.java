@@ -10,4 +10,6 @@ import java.util.List;
 public interface RecipeSearchService {
 
     List<Recipe> findByCategory(String category);
+
+    List<Recipe> findByTimeOfCooking(String timeOfCooking);
 }

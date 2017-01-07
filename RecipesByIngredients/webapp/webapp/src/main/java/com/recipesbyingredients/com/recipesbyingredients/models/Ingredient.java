@@ -1,15 +1,18 @@
 package com.recipesbyingredients.com.recipesbyingredients.models;
 
+import sun.reflect.generics.tree.Tree;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Class that represents the ingredients.
  */
 @Entity
 @Table(name = "ingredient")
-public class Ingredient implements Serializable {
+public class Ingredient implements Serializable, Comparable {
 
     @Id
     @Column(name = "id", nullable = false, unique = true)
@@ -24,7 +27,7 @@ public class Ingredient implements Serializable {
             @JoinColumn(name = "id_ingredient", nullable = true, updatable = false)},
     inverseJoinColumns = {
             @JoinColumn(name = "id_recipe", nullable = true, updatable = false)})
-    private Set<Recipe> recipes;
+    private TreeSet<Recipe> recipes;
 
     public Ingredient() {
 
@@ -57,5 +60,10 @@ public class Ingredient implements Serializable {
     @Override
     public String toString() {
         return this.name;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return Long.compare(this.id, ((Recipe)o).getId());
     }
 }

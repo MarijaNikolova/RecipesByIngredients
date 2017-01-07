@@ -18,4 +18,12 @@ public final class RecipeSpecifications {
             return criteriaBuilder.like(root.<String>get(Recipe_.category), category);
         };
     }
+
+    public static Specification<Recipe> hasTimeOfCooking(String timeOfCooking) {
+        return (root, criteriaQuery, criteriaBuilder) -> {
+            return criteriaBuilder.like(root.<String>get(Recipe_.timeOfCooking), timeOfCooking);
+        };
+    }
+
+
 }
