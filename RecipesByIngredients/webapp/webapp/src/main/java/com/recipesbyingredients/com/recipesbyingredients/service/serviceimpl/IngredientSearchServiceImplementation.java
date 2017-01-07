@@ -1,5 +1,7 @@
 package com.recipesbyingredients.com.recipesbyingredients.service.serviceimpl;
 
+import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.Iterables;
 import com.google.common.collect.Sets;
 import com.recipesbyingredients.com.recipesbyingredients.database.repository.IngredientRepository;
 import com.recipesbyingredients.com.recipesbyingredients.database.specifications.IngredientSpecifications;
@@ -36,9 +38,10 @@ public class IngredientSearchServiceImplementation  implements IngredientSearchS
             Set<Recipe> recipes = ingredient.getRecipes();
             recipesWithCounters.put(recipes.size(), recipes);
         }
-        Set<Recipe> recipes =  intersectionOfSets(recipesWithCounters);
 
-        return recipes;
+        Set<Recipe> recipes =  intersectionOfSets(recipesWithCounters);
+        Set<Recipe> recipesSubset = ImmutableSet.copyOf(Iterables.limit(recipes, 10));
+        return recipesSubset;
     }
 
     @Override
