@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13748170-8249-42bc-a2e3-4d70e851fcaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/service/IngredientSearchService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/service/serviceimpl/IngredientSearchServiceImplementation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/controllers/ApplicationController.java" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/controllers/ApplicationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/repository/IngredientRepository.java" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/repository/IngredientRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/specifications/IngredientSpecifications.java" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/database/specifications/IngredientSpecifications.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Ingredient.java" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Ingredient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/IngredientDescription.java" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/IngredientDescription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Recipe.java" afterPath="$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Recipe.java" />
     </list>
     <ignored path="RecipesByIngredients.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,12 +81,12 @@
       <file leaf-file-name="IngredientSearchServiceImplementation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/service/serviceimpl/IngredientSearchServiceImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.4705882">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.9033943">
+              <caret line="61" column="49" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1238#1250#0" expanded="true" />
-                <element signature="e#1326#1348#0" expanded="true" />
+                <element signature="e#1329#1341#0" expanded="true" />
+                <element signature="e#1417#1439#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1371,7 +1363,7 @@
       <workItem from="1483613515621" duration="6668000" />
       <workItem from="1483625899843" duration="11068000" />
       <workItem from="1483738265942" duration="12447000" />
-      <workItem from="1483795980227" duration="16336000" />
+      <workItem from="1483795980227" duration="17936000" />
     </task>
     <task id="LOCAL-00001" summary="/feature/ Added writing to file for the inverted index ingredients.">
       <created>1483394160762</created>
@@ -1421,11 +1413,23 @@
       <option name="project" value="LOCAL" />
       <updated>1483798888216</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="/feature/ Added Ingredient search service and intersection logic">
+      <created>1483817199810</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1483817199810</updated>
+    </task>
+    <task id="LOCAL-00010" summary="/change/ Added limitation of 10 max recipes">
+      <created>1483818153457</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1483818153457</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173966000" />
+    <option name="totallyTimeSpent" value="175566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -1437,7 +1441,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480392" sideWeight="0.50303954" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.022036474" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.62091506" sideWeight="0.49392098" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.49392098" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35947713" sideWeight="0.8487842" order="3" side_tool="false" content_ui="tabs" x="-25" y="-12" width="1354" height="386" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1448,7 +1452,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0751634" sideWeight="0.4969605" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78431374" sideWeight="0.4969605" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1479,7 +1483,9 @@
     <MESSAGE value="/feature/ Restructured webapp and added repository for recipe and ingredient" />
     <MESSAGE value="/feature/&#10;* Added specification, repository and demo service.&#10;/change/ &#10; * Changed column names.&#10;" />
     <MESSAGE value="/change/ Added ingredient specifications and added changes to current models.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="/change/ Added ingredient specifications and added changes to current models.&#10;" />
+    <MESSAGE value="/feature/ Added Ingredient search service and intersection logic" />
+    <MESSAGE value="/change/ Added limitation of 10 max recipes" />
+    <option name="LAST_COMMIT_MESSAGE" value="/change/ Added limitation of 10 max recipes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1902,12 +1908,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/service/serviceimpl/IngredientSearchServiceImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4705882">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.9033943">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1238#1250#0" expanded="true" />
-            <element signature="e#1326#1348#0" expanded="true" />
+            <element signature="e#1329#1341#0" expanded="true" />
+            <element signature="e#1417#1439#0" expanded="true" />
           </folding>
         </state>
       </provider>
