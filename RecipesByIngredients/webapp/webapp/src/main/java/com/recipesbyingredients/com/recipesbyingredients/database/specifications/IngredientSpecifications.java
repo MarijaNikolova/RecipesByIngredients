@@ -19,4 +19,12 @@ public final class IngredientSpecifications {
         };
     }
 
+    public static Specification<Ingredient> haveIngredients(String [] ingredients) {
+        return (root, criteriaQuery, criteriaBuilder) -> {
+
+
+
+            return null;
+        };
+    }
 }

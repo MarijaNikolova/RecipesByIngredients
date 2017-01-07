@@ -27,7 +27,7 @@ public class Ingredient implements Serializable, Comparable {
             @JoinColumn(name = "id_ingredient", nullable = true, updatable = false)},
     inverseJoinColumns = {
             @JoinColumn(name = "id_recipe", nullable = true, updatable = false)})
-    private TreeSet<Recipe> recipes;
+    private Set<Recipe> recipes;
 
     public Ingredient() {
 
@@ -64,6 +64,12 @@ public class Ingredient implements Serializable, Comparable {
 
     @Override
     public int compareTo(Object o) {
-        return Long.compare(this.id, ((Recipe)o).getId());
+        return this.name.compareTo(((Ingredient)o).getName());
     }
+
+    public Set<Recipe> getRecipes() {
+        return recipes;
+    }
+
+
 }

@@ -10,10 +10,11 @@ import java.util.Set;
 /**
  * Repository for the ingredient class.
  */
-public interface IngredientRepository extends Repository<Long, Ingredient>, JpaSpecificationExecutor<Ingredient>{
+public interface IngredientRepository extends Repository<Ingredient, Long>, JpaSpecificationExecutor<Ingredient>{
 
     public Set<Ingredient> findAllByName(String name);
 
-    public Ingredient findById(Long id);
+    public Ingredient findTop10ByName(String name);
 
+    public Ingredient findById(Long id);
 }

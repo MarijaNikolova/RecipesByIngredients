@@ -1,5 +1,8 @@
 package com.recipesbyingredients.com.recipesbyingredients.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -14,7 +17,8 @@ public class IngredientDescription implements Serializable {
     private int id;
     @Column(name = "ingredient_description", nullable = true, unique = false)
     private String description;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonBackReference
     @JoinColumn(name = "id_recipe")
     private Recipe recipe;
 

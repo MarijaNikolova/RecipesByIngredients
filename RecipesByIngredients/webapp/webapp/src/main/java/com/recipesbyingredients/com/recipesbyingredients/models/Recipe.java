@@ -1,5 +1,6 @@
 package com.recipesbyingredients.com.recipesbyingredients.models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
@@ -14,7 +15,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "recipe")
-public class Recipe implements Serializable {
+public class Recipe implements Serializable, Comparable {
 
     @Id
     @Column(name = "id", nullable = false, unique = true)
@@ -36,6 +37,7 @@ public class Recipe implements Serializable {
     @Column(name = "image_url")
     private String imageUrl;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe",fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<IngredientDescription> ingredientList;
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "ingredient_inverted_index", joinColumns = {
@@ -139,5 +141,10 @@ public class Recipe implements Serializable {
     @Override
     public String toString() {
         return this.title + "\n";
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return Long.compare(this.id,((Recipe)o).getId());
     }
 }
