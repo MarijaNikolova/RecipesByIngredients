@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13748170-8249-42bc-a2e3-4d70e851fcaa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/MainActivity2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/drawable/side_nav_bar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/activity_main2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/app_bar_main2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/content_main2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/nav_header_main2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/menu/activity_main2_drawer.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/menu/main_activity2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/MainActivity.java" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/content_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RecipesByIngredients.iws" />
@@ -81,7 +95,7 @@
       <file leaf-file-name="IngredientSearchServiceImplementation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/service/serviceimpl/IngredientSearchServiceImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9033943">
+            <state vertical-scroll-proportion="1.5309734">
               <caret line="61" column="49" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1363,7 +1377,7 @@
       <workItem from="1483613515621" duration="6668000" />
       <workItem from="1483625899843" duration="11068000" />
       <workItem from="1483738265942" duration="12447000" />
-      <workItem from="1483795980227" duration="17936000" />
+      <workItem from="1483795980227" duration="17985000" />
     </task>
     <task id="LOCAL-00001" summary="/feature/ Added writing to file for the inverted index ingredients.">
       <created>1483394160762</created>
@@ -1429,7 +1443,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175566000" />
+    <option name="totallyTimeSpent" value="175615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -1441,7 +1455,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480392" sideWeight="0.50303954" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.022036474" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.49392098" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5849673" sideWeight="0.49392098" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35947713" sideWeight="0.8487842" order="3" side_tool="false" content_ui="tabs" x="-25" y="-12" width="1354" height="386" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1485,7 +1499,8 @@
     <MESSAGE value="/change/ Added ingredient specifications and added changes to current models.&#10;" />
     <MESSAGE value="/feature/ Added Ingredient search service and intersection logic" />
     <MESSAGE value="/change/ Added limitation of 10 max recipes" />
-    <option name="LAST_COMMIT_MESSAGE" value="/change/ Added limitation of 10 max recipes" />
+    <MESSAGE value="/feature/ Added navigation drawer activity" />
+    <option name="LAST_COMMIT_MESSAGE" value="/feature/ Added navigation drawer activity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1908,7 +1923,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/service/serviceimpl/IngredientSearchServiceImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9033943">
+        <state vertical-scroll-proportion="1.5309734">
           <caret line="61" column="49" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
