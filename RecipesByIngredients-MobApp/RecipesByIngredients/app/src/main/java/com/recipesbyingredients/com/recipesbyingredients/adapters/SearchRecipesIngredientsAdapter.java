@@ -59,6 +59,7 @@ public class SearchRecipesIngredientsAdapter extends BaseAdapter {
         }
         Ingredient ingredient = ingredients.get(position);
         viewHolder.ingredientName.setText(ingredient.getName());
+        viewHolder.isIngredientChecked.setChecked(ingredient.isChecked());
         return convertView;
     }
 
