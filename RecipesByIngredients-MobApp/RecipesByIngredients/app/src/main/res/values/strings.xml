@@ -5,4 +5,16 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Navigation drawer menu strings !-->
+    <string name="navigation_menu_search_recipes_tittle">Пребарувај</string>
+    <string name="navigation_menu_my_ingredients_tittle">Мои состојки</string>
+    <string name="navigation_menu_my_recipes_tittle">Мои состојки</string>
+
+    <!-- My ingredients strings !-->
+    <string name="my_ingredients_auto_complete_placeholder">Додади состојка</string>
+    <string name="my_ingredients_delete_ingredient_button_text">Додади</string>
+    <string name="my_ingredients_add_ingredient_button_text">Избриши</string>
+
+
 </resources>
