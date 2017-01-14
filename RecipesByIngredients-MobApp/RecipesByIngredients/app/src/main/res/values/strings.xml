@@ -11,10 +11,13 @@
     <string name="navigation_menu_my_ingredients_tittle">Мои состојки</string>
     <string name="navigation_menu_my_recipes_tittle">Мои рецепти</string>
 
-    <!-- My ingredients strings !-->
+    <!-- My ingredients view strings !-->
     <string name="my_ingredients_auto_complete_placeholder">Додади состојка</string>
     <string name="my_ingredients_delete_ingredient_button_text">Избриши</string>
     <string name="my_ingredients_add_ingredient_button_text">Додади</string>
 
-
+    <!-- Search recipes view strings !-->
+    <string name="search_recipes_search_button_text">Пребарај</string>
+    <string name="search_recipes_add_ingredient_button">Додади</string>
+    <string name="search_recipes_auto_complete_placeholder">Додади состојка</string>
 </resources>

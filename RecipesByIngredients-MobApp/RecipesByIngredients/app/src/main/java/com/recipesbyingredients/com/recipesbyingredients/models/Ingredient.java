@@ -9,6 +9,7 @@ public class Ingredient implements Serializable{
 
     private long id;
     private String name;
+    private boolean isChecked;
 
     public Ingredient() {
     }
@@ -32,6 +33,14 @@ public class Ingredient implements Serializable{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isChecked() {
+        return isChecked;
+    }
+
+    public void setIsChecked(boolean isChecked) {
+        this.isChecked = isChecked;
     }
 
     @Override

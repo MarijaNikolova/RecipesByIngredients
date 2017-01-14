@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.recipesbyingredients.R;
@@ -13,15 +14,15 @@ import com.recipesbyingredients.com.recipesbyingredients.models.Ingredient;
 import java.util.ArrayList;
 
 /**
- * Ingredients list adapter used for the list in My ingredients fragment.
+ * Ingredients list adapter used for the list in Search fragment.
  */
-public class MyIngredientsIngredientsAdapter extends BaseAdapter {
+public class SearchRecipesIngredientsAdapter extends BaseAdapter {
 
     private ArrayList<Ingredient> ingredients;
     private Context context;
     private LayoutInflater layoutInflater;
 
-    public MyIngredientsIngredientsAdapter(Context context, ArrayList<Ingredient> ingredients) {
+    public SearchRecipesIngredientsAdapter(Context context, ArrayList<Ingredient> ingredients) {
         this.context = context;
         this.ingredients = ingredients;
         this.layoutInflater = LayoutInflater.from(context);
@@ -48,9 +49,10 @@ public class MyIngredientsIngredientsAdapter extends BaseAdapter {
         ViewHolder viewHolder;
 
         if(convertView==null){
-            convertView = layoutInflater.inflate(R.layout.my_ingredients_ingredients_list_item_layout,parent,false);
+            convertView = layoutInflater.inflate(R.layout.search_recipes_ingredients_list_item_layout,parent,false);
             viewHolder = new ViewHolder();
-            viewHolder.ingredientName = (TextView) convertView.findViewById(R.id.my_ingredients_ingredients_list_item_text);
+            viewHolder.isIngredientChecked = (CheckBox) convertView.findViewById(R.id.search_fragment_item_list_layout_checkbox);
+            viewHolder.ingredientName = (TextView) convertView.findViewById(R.id.search_fragment_item_list_layout_textview);
             convertView.setTag(viewHolder);
         }else{
             viewHolder = (ViewHolder)convertView.getTag();
@@ -61,6 +63,7 @@ public class MyIngredientsIngredientsAdapter extends BaseAdapter {
     }
 
     private class ViewHolder{
+        public CheckBox isIngredientChecked;
         public TextView ingredientName;
     }
 }

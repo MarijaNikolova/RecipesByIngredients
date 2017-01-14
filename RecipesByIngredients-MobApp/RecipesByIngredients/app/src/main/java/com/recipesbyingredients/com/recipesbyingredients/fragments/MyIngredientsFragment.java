@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ListView;
 
 import com.recipesbyingredients.R;
@@ -22,7 +23,7 @@ import java.util.ArrayList;
  */
 public class MyIngredientsFragment extends Fragment {
 
-    private ListView ingredientsListView;
+    private GridView ingredientsGridView;
     private Button addIngredientButton;
     private Button deleteIngredientButton;
     private AutoCompleteTextView searchIngredientAutocomplete;
@@ -37,7 +38,7 @@ public class MyIngredientsFragment extends Fragment {
     }
 
     private void getFragmentInnerViewElements(View myIngredientsView) {
-        ingredientsListView = (ListView) myIngredientsView.findViewById(R.id.my_ingredients_list);
+        ingredientsGridView = (GridView) myIngredientsView.findViewById(R.id.my_ingredients_list);
         addIngredientButton = (Button) myIngredientsView.findViewById(R.id.my_ingredients_add_ingredient_button);
         deleteIngredientButton = (Button) myIngredientsView.findViewById(R.id.my_ingredients_delete_ingredient_button);
         searchIngredientAutocomplete = (AutoCompleteTextView) myIngredientsView.findViewById(R.id.my_ingredients_add_ingredient_autocomplete_text_view);
@@ -47,7 +48,7 @@ public class MyIngredientsFragment extends Fragment {
         ArrayList<Ingredient> ingredients = getIngredients();
         MyIngredientsIngredientsAdapter myIngredientsIngredientsAdapter =
                 new MyIngredientsIngredientsAdapter(getActivity(), ingredients);
-        ingredientsListView.setAdapter(myIngredientsIngredientsAdapter);
+        ingredientsGridView.setAdapter(myIngredientsIngredientsAdapter);
         Log.d("ingredientsList", ingredients.toString());
     }
 

@@ -3,10 +3,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <ListView
+    <GridView
         android:id="@+id/my_ingredients_list"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></ListView>
+        android:layout_height="wrap_content"></GridView>
 
     <AutoCompleteTextView
         android:id="@+id/my_ingredients_add_ingredient_autocomplete_text_view"
