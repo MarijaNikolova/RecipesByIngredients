@@ -20,4 +20,7 @@
     <string name="search_recipes_search_button_text">Пребарај</string>
     <string name="search_recipes_add_ingredient_button">Додади</string>
     <string name="search_recipes_auto_complete_placeholder">Додади состојка</string>
+
+    <!-- My recipes view strings !-->
+    <string name="my_recipes_recipes_details_link_placeholder">Линк</string>
 </resources>

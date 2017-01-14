@@ -3,9 +3,6 @@ package com.recipesbyingredients;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,7 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.recipesbyingredients.com.recipesbyingredients.fragments.SearchRecipesFragment;
-import com.recipesbyingredients.com.recipesbyingredients.fragments.MyRecipesFragment;
+import com.recipesbyingredients.com.recipesbyingredients.fragments.MyRecipesListFragment;
 import com.recipesbyingredients.com.recipesbyingredients.fragments.MyIngredientsFragment;
 
 public class MainActivity2 extends AppCompatActivity
@@ -92,7 +89,7 @@ public class MainActivity2 extends AppCompatActivity
         if (id == R.id.nav_search_recipes_fragment) {
             fragmentTransaction.replace(R.id.content_frame, new SearchRecipesFragment());
         } else if (id == R.id.nav_my_recipes_fragment) {
-            fragmentTransaction.replace(R.id.content_frame, new MyRecipesFragment());
+            fragmentTransaction.replace(R.id.content_frame, new MyRecipesListFragment());
         } else if (id == R.id.nav_my_ingredients_fragment) {
             fragmentTransaction.replace(R.id.content_frame, new MyIngredientsFragment());
         }
