@@ -48,11 +48,10 @@ public class SavedIngredientsDataSource {
         long insertId = database.insert(SqlLiteHelper.TABLE_SAVED_INGREDIENTS, null,
                 values);
         Cursor cursor = database.query(SqlLiteHelper.TABLE_SAVED_INGREDIENTS,
-                allColumns, SqlLiteHelper.TABLE_SAVED_INGREDIENTS + " = " + insertId, null,
+                allColumns, SqlLiteHelper.COLUMN_ID_SAVED_INGREDIENTS + " = " + insertId, null,
                 null, null, null);
         cursor.moveToFirst();
         cursor.close();
-
     }
 
     public void deleteIngredient(Ingredient ingredient) {

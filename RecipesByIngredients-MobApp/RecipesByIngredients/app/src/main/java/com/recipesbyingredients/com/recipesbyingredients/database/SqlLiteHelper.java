@@ -46,7 +46,7 @@ public class SqlLiteHelper extends SQLiteOpenHelper {
 
     // Saved ingredients table creation sql statement
     private static final String CREATE_SAVED_INGREDIENTS_TABLE = "create table "
-            + COLUMN_ID_SAVED_INGREDIENTS + "( " + COLUMN_ID_SAVED_INGREDIENTS
+            + TABLE_SAVED_INGREDIENTS + "( " + COLUMN_ID_SAVED_INGREDIENTS
             + " integer primary key autoincrement, " + COLUMN_NAME_SAVED_INGREDIENTS
             + " text not null " +
             ");";

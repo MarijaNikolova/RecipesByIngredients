@@ -44,6 +44,8 @@ public class MyRecipesDetailsFragment extends Fragment {
         recipeInstructionsTextView = (TextView) recipeDetailsView.findViewById(R.id.my_recipes_recipes_details_instructions);
         recipeSourceTextView = (TextView) recipeDetailsView.findViewById(R.id.my_recipes_recipes_details_source_url);
         recipeIngredientsGridView = (GridView) recipeDetailsView.findViewById(R.id.my_recipes_recipes_details_ingredients_list);
+        recipeInstructionsTextView = (TextView) recipeDetailsView.findViewById(R.id.my_recipes_recipes_details_instructions);
+
     }
 
     private void getRecipeFromBundle() {

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 
@@ -18,6 +19,7 @@ import com.recipesbyingredients.com.recipesbyingredients.adapters.SearchRecipesI
 import com.recipesbyingredients.com.recipesbyingredients.models.Ingredient;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Fragment that represents the search view.
@@ -28,6 +30,7 @@ public class SearchRecipesFragment extends Fragment {
     private Button addIngredientButton;
     private Button searchRecipesButton;
     private AutoCompleteTextView addRecipeAutoCompleteTextView;
+    private ArrayList<Ingredient> ingredients;
 
     @Nullable
     @Override
@@ -36,6 +39,7 @@ public class SearchRecipesFragment extends Fragment {
         getFragmentInnerViewElements(searchRecipesView);
         setListViewAdapter();
         fillAutoCompleteTextView();
+        addListenerToAddIngredientButton();
         return searchRecipesView;
     }
 
@@ -47,7 +51,7 @@ public class SearchRecipesFragment extends Fragment {
     }
 
     private void setListViewAdapter() {
-        ArrayList<Ingredient> ingredients = getIngredients();
+        ingredients = getIngredients();
         SearchRecipesIngredientsAdapter searchRecipesIngredientsAdapter =
                 new SearchRecipesIngredientsAdapter(getActivity(), ingredients);
         ingredientsGridView.setAdapter(searchRecipesIngredientsAdapter);
@@ -88,6 +92,23 @@ public class SearchRecipesFragment extends Fragment {
                         ingredients);
         addRecipeAutoCompleteTextView.setThreshold(0);
         addRecipeAutoCompleteTextView.setAdapter(adapter);
+    }
+
+    private void addListenerToAddIngredientButton() {
+        addIngredientButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String value = addRecipeAutoCompleteTextView.getText().toString();
+                if (!value.equals("") && value.equals(" ") && value != null) {
+                    Ingredient ingredient = new Ingredient();
+                    ingredient.setName(value);
+                    ingredient.setIsChecked(true);
+                    ingredients.add(ingredient);
+                    ((BaseAdapter) ingredientsGridView.getAdapter()).notifyDataSetChanged();
+                }
+                addRecipeAutoCompleteTextView.setText("");
+            }
+        });
     }
 }
 
