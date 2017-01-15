@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.GridView;
@@ -34,6 +35,7 @@ public class SearchRecipesFragment extends Fragment {
         View searchRecipesView = inflater.inflate(R.layout.search_layout, container, false);
         getFragmentInnerViewElements(searchRecipesView);
         setListViewAdapter();
+        fillAutoCompleteTextView();
         return searchRecipesView;
     }
 
@@ -74,6 +76,18 @@ public class SearchRecipesFragment extends Fragment {
         ingredient.setName("sliva");
         ingredients.add(ingredient);
         return ingredients;
+    }
+
+    private void fillAutoCompleteTextView() {
+
+        String [] ingredients = getResources().getStringArray(R.array.ingredients_list);
+        ArrayAdapter<String> adapter =
+                new ArrayAdapter<String>(
+                        getActivity(),
+                        android.R.layout.simple_dropdown_item_1line,
+                        ingredients);
+        addRecipeAutoCompleteTextView.setThreshold(0);
+        addRecipeAutoCompleteTextView.setAdapter(adapter);
     }
 }
 
