@@ -13,6 +13,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <GridView
+        android:id="@+id/my_recipes_recipes_details_ingredients_list"
+        android:numColumns="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></GridView>
+
     <TextView
         android:id="@+id/my_recipes_recipes_details_instructions"
         android:layout_width="wrap_content"

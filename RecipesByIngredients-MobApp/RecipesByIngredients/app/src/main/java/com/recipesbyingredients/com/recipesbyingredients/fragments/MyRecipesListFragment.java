@@ -1,6 +1,8 @@
 package com.recipesbyingredients.com.recipesbyingredients.fragments;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.app.ListFragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -50,7 +52,12 @@ public class MyRecipesListFragment extends ListFragment {
         recipe = new Recipe();
         recipe.setId(12L);
         recipe.setTitle("Tret recept");
-        recipe.setImageUrl("http://trichilofoods.com/site/wp-content/uploads/2015/06/veggies.jpg");
+        recipe.setImageUrl("https://moirecepti.mk/content/uploads/2016/11/1-2efd7e-800x546.jpg");
+
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("100 grama brasno");
+        list.add("500 litri voda");
+        recipe.setIngredients(list);
         recipes.add(recipe);
         return recipes;
     }
@@ -58,6 +65,15 @@ public class MyRecipesListFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("recipe", recipes.get(position));
+        MyRecipesDetailsFragment myRecipesDetailsFragment = new MyRecipesDetailsFragment();
+        myRecipesDetailsFragment.setArguments(bundle);
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.content_frame,  myRecipesDetailsFragment);
+        fragmentTransaction.commit();
     }
 }
 
