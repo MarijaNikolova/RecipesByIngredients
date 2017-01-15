@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /**
  * Data source for the ingredient table.
  */
-public class IngredientDataSource {
+public class IngredientsDataSource {
 
     private SQLiteDatabase database;
     private SqlLiteHelper dbHelper;
@@ -22,7 +22,7 @@ public class IngredientDataSource {
             SqlLiteHelper.COLUMN_NAME_INGREDIENTS
     };
 
-    public IngredientDataSource(Context context) {
+    public IngredientsDataSource(Context context) {
         dbHelper = new SqlLiteHelper(context);
     }
 
@@ -45,7 +45,6 @@ public class IngredientDataSource {
 
     public void insertIngredient(Ingredient ingredient) {
         ContentValues values = new ContentValues();
-        values.put(SqlLiteHelper.COLUMN_ID_INGREDIENTS, ingredient.getId());
         values.put(SqlLiteHelper.COLUMN_NAME_INGREDIENTS, ingredient.getName());
 
         long insertId = database.insert(SqlLiteHelper.TABLE_INGREDIENTS, null,

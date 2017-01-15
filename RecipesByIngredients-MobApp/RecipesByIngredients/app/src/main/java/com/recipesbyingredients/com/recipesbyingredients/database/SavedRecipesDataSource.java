@@ -13,7 +13,7 @@ import java.util.ArrayList;
 /**
  * Data source for the recipes table.
  */
-public class RecipeDataSource {
+public class SavedRecipesDataSource {
 
     private SQLiteDatabase database;
     private SqlLiteHelper dbHelper;
@@ -28,7 +28,7 @@ public class RecipeDataSource {
             SqlLiteHelper.COLUMN_INGREDIENTS_RECIPES
     };
 
-    public RecipeDataSource(Context context) {
+    public SavedRecipesDataSource(Context context) {
         dbHelper = new SqlLiteHelper(context);
     }
 

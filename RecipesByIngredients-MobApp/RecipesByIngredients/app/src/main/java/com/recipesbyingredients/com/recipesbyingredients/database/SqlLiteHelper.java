@@ -13,9 +13,13 @@ public class SqlLiteHelper extends SQLiteOpenHelper {
     public static final String TABLE_INGREDIENTS = "ingredients";
     public static final String TABLE_SAVED_RECIPES = "saved_recipes";
     public static final String TABLE_SEARCHED_RECIPES = "searched_recipes";
+    public static final String TABLE_SAVED_INGREDIENTS = "saved_ingredients";
 
     public static final String COLUMN_ID_INGREDIENTS = "id";
     public static final String COLUMN_NAME_INGREDIENTS = "name";
+
+    public static final String COLUMN_ID_SAVED_INGREDIENTS = "id";
+    public static final String COLUMN_NAME_SAVED_INGREDIENTS = "name";
 
     public static final String COLUMN_ID_RECIPES = "id";
     public static final String COLUMN_TITTLE_RECIPES = "tittle";
@@ -36,7 +40,14 @@ public class SqlLiteHelper extends SQLiteOpenHelper {
     // Ingredients table creation sql statement
     private static final String CREATE_INGREDIENTS_TABLE = "create table "
             + TABLE_INGREDIENTS + "( " + COLUMN_ID_INGREDIENTS
-            + " integer primary key, " + COLUMN_NAME_INGREDIENTS
+            + " integer primary key autoincrement, " + COLUMN_NAME_INGREDIENTS
+            + " text not null " +
+            ");";
+
+    // Saved ingredients table creation sql statement
+    private static final String CREATE_SAVED_INGREDIENTS_TABLE = "create table "
+            + COLUMN_ID_SAVED_INGREDIENTS + "( " + COLUMN_ID_SAVED_INGREDIENTS
+            + " integer primary key autoincrement, " + COLUMN_NAME_SAVED_INGREDIENTS
             + " text not null " +
             ");";
 
@@ -69,6 +80,7 @@ public class SqlLiteHelper extends SQLiteOpenHelper {
         database.execSQL(CREATE_INGREDIENTS_TABLE);
         database.execSQL(CREATE_RECIPES_TABLE);
         database.execSQL(CREATE_SEARCHED_RECIPES_TABLE);
+        database.execSQL(CREATE_SAVED_INGREDIENTS_TABLE);
     }
 
     @Override
@@ -79,6 +91,7 @@ public class SqlLiteHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_INGREDIENTS);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_SAVED_RECIPES);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_SEARCHED_RECIPES);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_SAVED_INGREDIENTS);
         onCreate(db);
     }
 }
