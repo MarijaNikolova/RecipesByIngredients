@@ -1,11 +1,14 @@
 package com.recipesbyingredients.com.recipesbyingredients.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.io.Serializable;
 import java.util.List;
 
 /**
  * Model for recipes.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Recipe implements Serializable {
 
     private long id;
@@ -16,8 +19,9 @@ public class Recipe implements Serializable {
     private String recipeYield;
     private String imageUrl;
     private String category;
-    private String instructions;
+    private String stepsForCooking;
     private String ingredientsString;
+    private List<IngredientDescription> ingredientList;
 
     public Recipe() {
 
@@ -34,10 +38,10 @@ public class Recipe implements Serializable {
         this.timeOfCooking = timeOfCooking;
     }
 
-    public Recipe(long id, String ingredientsString, String instructions, String category, String imageUrl, String recipeYield, String timeOfCooking, String url, String title) {
+    public Recipe(long id, String ingredientsString, String stepsForCooking, String category, String imageUrl, String recipeYield, String timeOfCooking, String url, String title) {
         this.id = id;
         this.ingredientsString = ingredientsString;
-        this.instructions = instructions;
+        this.stepsForCooking = stepsForCooking;
         this.category = category;
         this.imageUrl = imageUrl;
         this.recipeYield = recipeYield;
@@ -110,12 +114,12 @@ public class Recipe implements Serializable {
         this.ingredients = ingredients;
     }
 
-    public String getInstructions() {
-        return instructions;
+    public String getStepsForCooking() {
+        return stepsForCooking;
     }
 
-    public void setInstructions(String instructions) {
-        this.instructions = instructions;
+    public void setStepsForCooking(String stepsForCooking) {
+        this.stepsForCooking = stepsForCooking;
     }
 
     public String getIngredientsString() {
@@ -124,5 +128,13 @@ public class Recipe implements Serializable {
 
     public void setIngredientsString(String ingredientsString) {
         this.ingredientsString = ingredientsString;
+    }
+
+    public List<IngredientDescription> getIngredientList() {
+        return ingredientList;
+    }
+
+    public void setIngredientList(List<IngredientDescription> ingredientList) {
+        this.ingredientList = ingredientList;
     }
 }

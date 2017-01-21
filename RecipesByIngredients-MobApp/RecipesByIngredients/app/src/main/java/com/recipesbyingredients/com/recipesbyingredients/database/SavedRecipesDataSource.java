@@ -58,7 +58,7 @@ public class SavedRecipesDataSource {
         values.put(SqlLiteHelper.COLUMN_TITTLE_RECIPES, recipe.getTitle());
         values.put(SqlLiteHelper.COLUMN_TIME_OF_COOKING_RECIPES, recipe.getTimeOfCooking());
         values.put(SqlLiteHelper.COLUMN_RECIPE_YIELD_RECIPES, recipe.getRecipeYield());
-        values.put(SqlLiteHelper.COLUMN_INSTRUCTIONS_RECIPES, recipe.getInstructions());
+        values.put(SqlLiteHelper.COLUMN_INSTRUCTIONS_RECIPES, recipe.getStepsForCooking());
         values.put(SqlLiteHelper.COLUMN_INGREDIENTS_RECIPES, recipe.getIngredientsString());
 
         long insertId = database.insert(SqlLiteHelper.TABLE_SAVED_RECIPES, null,
@@ -107,7 +107,7 @@ public class SavedRecipesDataSource {
         recipe.setRecipeYield(cursor.getString(4));
         recipe.setCategory(cursor.getString(5));
         recipe.setTimeOfCooking(cursor.getString(6));
-        recipe.setInstructions(cursor.getString(7));
+        recipe.setStepsForCooking(cursor.getString(7));
         recipe.setIngredientsString(cursor.getString(8));
         return recipe;
     }

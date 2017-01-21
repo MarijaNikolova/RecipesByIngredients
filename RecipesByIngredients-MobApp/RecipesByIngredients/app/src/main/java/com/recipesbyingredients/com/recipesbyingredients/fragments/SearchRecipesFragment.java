@@ -1,6 +1,8 @@
 package com.recipesbyingredients.com.recipesbyingredients.fragments;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -40,6 +42,7 @@ public class SearchRecipesFragment extends Fragment {
         setListViewAdapter();
         fillAutoCompleteTextView();
         addListenerToAddIngredientButton();
+        addListenerSearchRecipesButton();
         return searchRecipesView;
     }
 
@@ -99,16 +102,48 @@ public class SearchRecipesFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String value = addRecipeAutoCompleteTextView.getText().toString();
-                if (!value.equals("") && value.equals(" ") && value != null) {
+                if (!value.equals("") && !value.equals(" ")) {
                     Ingredient ingredient = new Ingredient();
                     ingredient.setName(value);
                     ingredient.setIsChecked(true);
-                    ingredients.add(ingredient);
+                    if (!ingredients.contains(ingredient))
+                        ingredients.add(ingredient);
                     ((BaseAdapter) ingredientsGridView.getAdapter()).notifyDataSetChanged();
                 }
-                addRecipeAutoCompleteTextView.setText("");
+
             }
         });
+    }
+
+    private void addListenerSearchRecipesButton() {
+        searchRecipesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ArrayList<String> checkedIngredients = getCheckedIngredients();
+                openRecipesListFragment(checkedIngredients);
+            }
+        });
+    }
+
+    private ArrayList<String> getCheckedIngredients() {
+        ArrayList<String> checkedIngredients = new ArrayList<String>();
+        for (Ingredient ingredient : ingredients) {
+            if (ingredient.isChecked()) {
+                checkedIngredients.add(ingredient.getName());
+            }
+        }
+        return checkedIngredients;
+    }
+
+    private void openRecipesListFragment(ArrayList<String> checkedIngredients) {
+        MyRecipesListFragment myRecipesListFragment = new MyRecipesListFragment();
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("ingredients", checkedIngredients);
+        myRecipesListFragment.setArguments(bundle);
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.content_frame, myRecipesListFragment);
+        fragmentTransaction.commit();
     }
 }
 

@@ -1,10 +1,13 @@
 package com.recipesbyingredients.com.recipesbyingredients.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.io.Serializable;
 
 /**
  * Ingredient model.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Ingredient implements Serializable{
 
     private long id;

@@ -4,6 +4,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.ListFragment;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -14,6 +15,10 @@ import android.widget.ListView;
 import com.recipesbyingredients.R;
 import com.recipesbyingredients.com.recipesbyingredients.adapters.MyRecipesRecipesAdapter;
 import com.recipesbyingredients.com.recipesbyingredients.models.Recipe;
+import com.recipesbyingredients.com.recipesbyingredients.models.RecipesList;
+
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +40,14 @@ public class MyRecipesListFragment extends ListFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         recipes = getRecipesList();
-        setListAdapter(new MyRecipesRecipesAdapter(getActivity(), recipes));
+        List<String> ingredients = new ArrayList<>() ;
+        if (getArguments() != null) {
+            ingredients = (ArrayList<String>) getArguments().getSerializable("ingredients");
+        }
+
+
+        new GetRecipesFromServerAsyncTask().execute(ingredients);
+       // setListAdapter(new MyRecipesRecipesAdapter(getActivity(), recipes));
     }
 
     // TODO: 1/14/2017 Get recipes from database 
@@ -74,6 +86,34 @@ public class MyRecipesListFragment extends ListFragment {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.content_frame,  myRecipesDetailsFragment);
         fragmentTransaction.commit();
+    }
+
+    private class GetRecipesFromDatabaseAsyncTask extends AsyncTask<Void, Void, List<Recipe>> {
+
+        @Override
+        protected List<Recipe> doInBackground(Void... params) {
+            return null;
+        }
+    }
+
+    private class GetRecipesFromServerAsyncTask extends AsyncTask<List<String>, Void, List<Recipe>> {
+
+        @Override
+        protected List<Recipe> doInBackground(List<String>... params) {
+
+            RestTemplate restTemplate = new RestTemplate();
+            String url = "http://172.20.10.3:8000/getAllRecipesByGivenIngredients?ingredients=јајца,слива";
+            restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+            List<Recipe> recipes = restTemplate.getForObject(url, RecipesList.class).getRecipeList();
+            return recipes;
+        }
+
+        @Override
+        protected void onPostExecute(List<Recipe> recipes) {
+            super.onPostExecute(recipes);
+
+            setListAdapter(new MyRecipesRecipesAdapter(getActivity(), recipes));
+        }
     }
 }
 

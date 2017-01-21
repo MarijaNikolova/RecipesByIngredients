@@ -82,7 +82,7 @@ public class MyIngredientsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String value = searchIngredientAutocomplete.getText().toString();
-                if (!value.equals("") && value.equals(" ") && value != null) {
+                if (!value.equals("") && !value.equals(" ")) {
                     Ingredient ingredient = new Ingredient();
                     ingredient.setName(value);
                     WriteIngredientToDatabaseAsyncTask writeIngredientToDatabaseAsyncTask =
