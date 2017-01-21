@@ -16,11 +16,15 @@ import com.recipesbyingredients.R;
 import com.recipesbyingredients.com.recipesbyingredients.adapters.MyRecipesRecipesAdapter;
 import com.recipesbyingredients.com.recipesbyingredients.models.Recipe;
 import com.recipesbyingredients.com.recipesbyingredients.models.RecipesList;
+import com.recipesbyingredients.com.recipesbyingredients.utilities.Constants;
 
+import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -29,6 +33,7 @@ import java.util.List;
 public class MyRecipesListFragment extends ListFragment {
 
     private List<Recipe> recipes;
+    private int mode;
 
     @Nullable
     @Override
@@ -39,39 +44,29 @@ public class MyRecipesListFragment extends ListFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        recipes = getRecipesList();
         List<String> ingredients = new ArrayList<>() ;
         if (getArguments() != null) {
             ingredients = (ArrayList<String>) getArguments().getSerializable("ingredients");
+            mode = getArguments().getInt("mode");
         }
-
-
-        new GetRecipesFromServerAsyncTask().execute(ingredients);
-       // setListAdapter(new MyRecipesRecipesAdapter(getActivity(), recipes));
+        setRecipesList(mode, ingredients);
+        
     }
 
-    // TODO: 1/14/2017 Get recipes from database 
-    private List<Recipe> getRecipesList() {
-        List<Recipe> recipes = new ArrayList<Recipe>();
-        Recipe recipe = new Recipe();
-        recipe.setId(12L);
-        recipe.setTitle("Prv recept");
-        recipes.add(recipe);
-        recipe = new Recipe();
-        recipe.setId(13L);
-        recipe.setTitle("Vtor recept");
-        recipes.add(recipe);
-        recipe = new Recipe();
-        recipe.setId(12L);
-        recipe.setTitle("Tret recept");
-        recipe.setImageUrl("https://moirecepti.mk/content/uploads/2016/11/1-2efd7e-800x546.jpg");
-
-        ArrayList<String> list = new ArrayList<String>();
-        list.add("100 grama brasno");
-        list.add("500 litri voda");
-        recipe.setIngredients(list);
-        recipes.add(recipe);
+    private void setRecipesList(int mode,  List<String> ingredients ) {
+        if (mode == Constants.MODE_SEARCHED_RECIPES) {
+            getRecipesFromServer(ingredients);
+        } else {
+            getRecipesFromDatabase();
+        }
+    }
+    
+    private List<Recipe> getRecipesFromDatabase() {
+        // TODO: 1/21/2017 Add database async task
         return recipes;
+    }
+    private void getRecipesFromServer(List<String> ingredients) {
+        new GetRecipesFromServerAsyncTask().execute(ingredients);
     }
 
     @Override
@@ -102,17 +97,27 @@ public class MyRecipesListFragment extends ListFragment {
         protected List<Recipe> doInBackground(List<String>... params) {
 
             RestTemplate restTemplate = new RestTemplate();
-            String url = "http://172.20.10.3:8000/getAllRecipesByGivenIngredients?ingredients=јајца,слива";
+            String url = getUrlWithIngredientsAttached(params[0]);
             restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
-            List<Recipe> recipes = restTemplate.getForObject(url, RecipesList.class).getRecipeList();
-            return recipes;
+            Recipe [] recipes = restTemplate.getForObject(url, Recipe[].class);
+            List<Recipe> recipesList = Arrays.asList(recipes);
+            return recipesList;
         }
 
         @Override
-        protected void onPostExecute(List<Recipe> recipes) {
-            super.onPostExecute(recipes);
-
+        protected void onPostExecute(List<Recipe> recipesList) {
+            super.onPostExecute(recipesList);
+            recipes = recipesList;
             setListAdapter(new MyRecipesRecipesAdapter(getActivity(), recipes));
+        }
+
+        private String getUrlWithIngredientsAttached(List<String> ingredients) {
+            String url = Constants.getRecipesByIngredientsUrl;
+            for (String ingredient : ingredients) {
+                url += ingredient + ",";
+            }
+            url = url.substring(0, url.length() - 1);
+            return  url;
         }
     }
 }

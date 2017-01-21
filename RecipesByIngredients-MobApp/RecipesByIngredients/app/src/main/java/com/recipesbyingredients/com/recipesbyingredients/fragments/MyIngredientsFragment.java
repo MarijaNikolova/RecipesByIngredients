@@ -150,7 +150,7 @@ public class MyIngredientsFragment extends Fragment {
 
         @Override
         protected void onPostExecute(ArrayList<Ingredient> ingredients) {
-           // closeDatabaseConnection();
+            closeDatabaseConnection();
             setListViewAdapter(ingredients);
 
         }

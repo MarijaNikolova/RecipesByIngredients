@@ -8,7 +8,7 @@ import java.io.Serializable;
  * Ingredient model.
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Ingredient implements Serializable{
+public class Ingredient implements Serializable, Comparable{
 
     private long id;
     private String name;
@@ -49,5 +49,10 @@ public class Ingredient implements Serializable{
     @Override
     public String toString() {
         return this.name;
+    }
+
+    @Override
+    public int compareTo(Object another) {
+        return this.getName().compareTo(((Ingredient)another).getName());
     }
 }

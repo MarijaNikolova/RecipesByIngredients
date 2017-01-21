@@ -5,27 +5,40 @@
 
     <GridView
         android:id="@+id/search_layout_ingredients_list"
-        android:numColumns="3"
+        android:numColumns="2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></GridView>
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
 
-    <AutoCompleteTextView
-        android:id="@+id/search_layout_add_ingredient_autocomplete_text_view"
-        android:hint="@string/search_recipes_auto_complete_placeholder"
-        android:layout_width="wrap_content"
-        android:capitalize="none"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
-    <Button
-        android:id="@+id/search_layout_add_ingredient_button"
-        android:text="@string/search_recipes_add_ingredient_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <AutoCompleteTextView
+            android:id="@+id/search_layout_add_ingredient_autocomplete_text_view"
+            android:hint="@string/search_recipes_auto_complete_placeholder"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:capitalize="none"
+            style="@style/AutocompleteTextViewStyle" />
+
+        <Button
+            android:id="@+id/search_layout_add_ingredient_button"
+            android:text="@string/search_recipes_add_ingredient_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/search_layout_search_button"
         android:text="@string/search_recipes_search_button_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 </LinearLayout>
