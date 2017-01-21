@@ -4,9 +4,8 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/my_recipes_recipes_list_item_text_view"
+        android:id="@+id/my_recipes_ingredients_list_item_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/TextViewsAndCheckBoxesStyle" />
-
+        style="@style/IngredientsListInRecipeDetails" />
 </LinearLayout>

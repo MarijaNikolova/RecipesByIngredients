@@ -137,4 +137,9 @@ public class Recipe implements Serializable {
     public void setIngredientList(List<IngredientDescription> ingredientList) {
         this.ingredientList = ingredientList;
     }
+
+    @Override
+    public String toString() {
+        return this.ingredientList.toString();
+    }
 }

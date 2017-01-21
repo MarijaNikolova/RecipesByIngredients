@@ -19,6 +19,11 @@
         <item name="android:textSize">20dp</item>
     </style>
 
+    <style name="IngredientsListInRecipeDetails">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
     <style name="AutocompleteTextViewStyle">
         <item name="android:textColorHint">@color/colorAccent</item>
         <item name="android:textColor">@color/colorAccent</item>

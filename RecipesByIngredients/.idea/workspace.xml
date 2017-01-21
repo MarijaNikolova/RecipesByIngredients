@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13748170-8249-42bc-a2e3-4d70e851fcaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/utilities/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/fragments/MyRecipesListFragment.java" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/fragments/MyRecipesListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/fragments/SearchRecipesFragment.java" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/fragments/SearchRecipesFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/adapters/RecipeDetailsIngredientsAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/fragments/MyRecipesDetailsInstructionsFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/drawable/shape.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/my_recipes_recipes_details_ingredients_item_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/my_recipes_recipes_details_instructions_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/fragments/MyRecipesDetailsFragment.java" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/fragments/MyRecipesDetailsFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/IngredientDescription.java" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/IngredientDescription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Recipe.java" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/java/com/recipesbyingredients/com/recipesbyingredients/models/Recipe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/my_recipes_recipes_details_layout.xml" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/my_recipes_recipes_details_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/my_recipes_recipes_list_item_layout.xml" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/layout/my_recipes_recipes_list_item_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/../RecipesByIngredients-MobApp/RecipesByIngredients/app/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RecipesByIngredients.iws" />
@@ -98,8 +107,8 @@
       <file leaf-file-name="IngredientSearchServiceImplementation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/service/serviceimpl/IngredientSearchServiceImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.97602737">
-              <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.37859008">
+              <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1417#1439#0" expanded="true" />
@@ -894,7 +903,7 @@
       <workItem from="1484389431988" duration="772000" />
       <workItem from="1484511442001" duration="2209000" />
       <workItem from="1484997564064" duration="1156000" />
-      <workItem from="1485021040860" duration="4064000" />
+      <workItem from="1485021040860" duration="6152000" />
     </task>
     <task id="LOCAL-00001" summary="/feature/ Added writing to file for the inverted index ingredients.">
       <created>1483394160762</created>
@@ -966,11 +975,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184140000" />
+    <option name="totallyTimeSpent" value="186228000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -978,7 +987,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480392" sideWeight="0.50303954" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.022036474" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49392098" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.49392098" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35947713" sideWeight="0.8487842" order="3" side_tool="false" content_ui="tabs" x="-25" y="-12" width="1354" height="386" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -989,7 +998,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.4969605" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48366013" sideWeight="0.4969605" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1429,8 +1438,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/webapp/src/main/java/com/recipesbyingredients/com/recipesbyingredients/service/serviceimpl/IngredientSearchServiceImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97602737">
-          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.37859008">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1417#1439#0" expanded="true" />

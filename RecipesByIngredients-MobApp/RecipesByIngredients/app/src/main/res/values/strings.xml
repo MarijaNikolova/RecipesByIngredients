@@ -24,6 +24,8 @@
     <!-- My recipes view strings !-->
     <string name="my_recipes_recipes_details_link_placeholder">Линк</string>
 
+    <string name="my_recipes_recipes_details_go_to_instructions_button_text">Инструкции</string>
+
     <!-- Ingredients string array !-->
     <string-array name="ingredients_list">
         <item>авокадо</item>
